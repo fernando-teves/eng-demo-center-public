@@ -1,0 +1,171 @@
+{
+  "eyebrow": "OUTPUT 2 · TO BE ARQUITETURAL",
+  "headline": "Arquitetura Enterprise para sustentar AI Flows",
+  "lead": "A Inception identifica quais camadas corporativas precisam evoluir para que dados, APIs, agentes, governança e operação estejam acessíveis e seguros para uso por IA.",
+  "disclaimer": "Dados fictícios para fins demonstrativos",
+
+  "comparisonTitle": "De Arquitetura AS IS a Arquitetura AI-Ready",
+  "comparison": {
+    "asIs": {
+      "label": "Arquitetura AS IS",
+      "subtitle": "Camadas existentes, mas ainda fragmentadas para escalar IA com segurança, integração e valor.",
+      "layers": [
+        "Canais e aplicações fragmentadas",
+        "Uso informal de IA e Shadow AI",
+        "Governança inicial",
+        "APIs sem catálogo",
+        "Dados dispersos",
+        "Operação pouco observável"
+      ],
+      "indicators": [
+        { "label": "Prontidão", "value": "Baixa a média" },
+        { "label": "Governança", "value": "Inicial" },
+        { "label": "Integração", "value": "Parcial" },
+        { "label": "Escala", "value": "Limitada" }
+      ]
+    },
+    "toBe": {
+      "label": "Arquitetura AI-Ready / TO BE",
+      "subtitle": "Camadas corporativas organizadas, governadas e acessíveis para sustentar AI Flows com segurança, escala e valor.",
+      "layers": [
+        "Canais preparados para IA",
+        "Agentes padronizados e avaliados",
+        "API Gateway, AI Gateway e guardrails",
+        "APIs catalogadas e integrações governadas",
+        "Dados curados e conhecimento acessível",
+        "Operação observável e métricas de valor"
+      ],
+      "indicators": [
+        { "label": "Prontidão", "value": "Evolutiva" },
+        { "label": "Governança", "value": "Integrada" },
+        { "label": "Integração", "value": "Reutilizável" },
+        { "label": "Escala", "value": "Por ondas" }
+      ]
+    },
+    "connectorLabel": "AI Flows evoluem capacidades",
+    "connectorSubtitle": "Ondas de desenvolvimento e adoção transformam camadas corporativas em capacidades reutilizáveis."
+  },
+
+  "wavesHeadline": "AI Flows como ondas de desenvolvimento e adoção de IA",
+  "wavesLead": "Cada AI Flow avança uma frente de valor e entrega habilitadores, agentes, dados, APIs, integrações, guardrails e métricas de forma progressiva.",
+  "wavesNote": "AI Flow é uma onda de desenvolvimento e adoção de IA, não um componente de arquitetura.",
+  "waveTracks": ["Habilitadores arquiteturais", "Desenvolvimento de agentes", "Dados e conhecimento", "APIs e integrações", "Guardrails e métricas"],
+  "waveRoadmap": [
+    {
+      "name": "Atendimento Inteligente",
+      "number": 1,
+      "decision": "Avançar com guardrails mínimos",
+      "tracks": [
+        ["Base de conhecimento governada", "Fallback humano", "Métricas de SLA"],
+        ["Agente de triagem", "Resposta assistida", "Roteamento inteligente"],
+        ["Histórico de chamados", "Artigos e FAQs", "SLAs departamentais"],
+        ["APIs de atendimento", "Service Desk", "CRM", "Teams"],
+        ["Logs de decisão", "Revisão humana", "Tempo de resposta", "Taxa de resolução"]
+      ]
+    },
+    {
+      "name": "Conhecimento Corporativo Governado",
+      "number": 2,
+      "decision": "Preparar fundação",
+      "tracks": [
+        ["Catálogo de conhecimento", "Curadoria documental", "Políticas de acesso"],
+        ["Agente de ingestão", "Agente classificador", "Agente sintetizador"],
+        ["Documentos internos", "Políticas corporativas", "Bases de referência"],
+        ["APIs de conteúdo", "SharePoint", "GED", "Catálogo corporativo"],
+        ["Citação de fontes", "Classificação de sensibilidade", "Auditoria de uso", "Qualidade da resposta"]
+      ]
+    },
+    {
+      "name": "Modernização Assistida",
+      "number": 3,
+      "decision": "Avançar",
+      "tracks": [
+        ["Inventário de sistemas", "Contratos de serviço", "Padrões de integração"],
+        ["Agente de leitura de legado", "Agente de contrato", "Agente de suporte à migração"],
+        ["Repositórios de código", "Mapas técnicos", "Documentação de sistemas"],
+        ["APIs existentes", "API Gateway", "Contratos de APIs", "Exposição incremental"],
+        ["Rastreabilidade técnica", "Observabilidade", "Redução de fricção em legados", "Adoção por squads"]
+      ]
+    }
+  ],
+  "waveConnectors": [
+    "Capacidade acumulada: conhecimento governado",
+    "Capacidade acumulada: APIs e dados preparados para agentes"
+  ],
+
+  "diagram": {
+    "headline": "Capacidades arquiteturais que habilitam os AI Flows",
+    "lead": "As ondas de adoção de IA dependem de uma base corporativa capaz de conectar canais, governança, agentes, integrações, dados e operação.",
+    "layers": [
+      { "number": 1, "name": "Canais e demandas", "phrase": "Jornadas onde a IA pode gerar valor.", "chips": ["Portal interno", "Canais digitais", "Teams", "CRM", "Service desk"] },
+      { "number": 2, "name": "API Gateway e governança de entrada", "phrase": "Controle de entrada, autenticação, validação e rastreabilidade.", "chips": ["Auth", "Rate limiting", "Logs", "Validação", "Auditoria"], "hero": true },
+      { "number": 3, "name": "AI Gateway e governança de IA", "phrase": "Controle de modelos, agentes, políticas, limites e observabilidade.", "chips": ["Políticas", "Logs", "Fallback humano", "Limites", "Auditoria"], "hero": true },
+      { "number": 4, "name": "Agentes e automações inteligentes", "phrase": "Capacidades cognitivas aplicadas a fluxos de negócio.", "chips": ["Triagem", "Resposta", "Curadoria", "Classificação", "Análise"], "hero": true },
+      { "number": 5, "name": "APIs, iPaaS, integração e Fast Data", "phrase": "Conectividade corporativa e contexto atualizado para agentes.", "chips": ["API Manager", "iPaaS", "Eventos", "Streaming", "Cache"], "hero": true },
+      { "number": 6, "name": "Sistemas corporativos, Data Lake e conhecimento", "phrase": "Sistemas de negócio, histórico, documentos e bases de conhecimento.", "chips": ["ERP", "CRM", "ITSM", "SharePoint", "Lakehouse"] }
+    ],
+    "crossLayer": {
+      "phrase": "Sustentação, segurança, custo, auditoria e evolução contínua.",
+      "chips": ["Observabilidade", "Segurança", "LGPD", "Auditoria", "FinOps", "Operação"]
+    }
+  },
+
+  "heatmap": {
+    "headline": "Exemplo demonstrativo de monitoramento arquitetural",
+    "lead": "A matriz acompanha como cada AI Flow consome, ajusta ou habilita capacidades arquiteturais ao longo da evolução.",
+    "columns": ["Canais", "AI Gateway", "Agentes", "APIs e Integração", "Dados e Conhecimento", "Operação", "Métricas"],
+    "legend": [
+      { "label": "Sem uso", "state": "none" },
+      { "label": "Consome", "state": "consome" },
+      { "label": "Prepara", "state": "prepara" },
+      { "label": "Ajusta", "state": "ajusta" },
+      { "label": "Habilita", "state": "habilita" },
+      { "label": "Crítico", "state": "critico" }
+    ],
+    "flows": [
+      {
+        "name": "Atendimento Inteligente",
+        "decision": "Avançar",
+        "cells": ["consome", "ajusta", "habilita", "consome", "ajusta", "prepara", "habilita"]
+      },
+      {
+        "name": "Conhecimento Corporativo Governado",
+        "decision": "Preparar fundação",
+        "cells": ["consome", "ajusta", "habilita", "prepara", "critico", "prepara", "habilita"]
+      },
+      {
+        "name": "Triagem Inteligente de Documentos",
+        "decision": "Ajustar escopo",
+        "cells": ["consome", "ajusta", "habilita", "consome", "critico", "prepara", "ajusta"]
+      },
+      {
+        "name": "Operação Assistida por Agentes",
+        "decision": "Preparar fundação",
+        "cells": ["prepara", "critico", "habilita", "critico", "ajusta", "critico", "ajusta"]
+      },
+      {
+        "name": "Modernização Assistida",
+        "decision": "Avançar",
+        "cells": ["prepara", "ajusta", "consome", "habilita", "ajusta", "prepara", "habilita"]
+      }
+    ],
+    "insights": [
+      "Capacidades críticas concentram-se em AI Gateway, dados, integração e operação.",
+      "Ondas com maior prontidão podem avançar enquanto fundações são preparadas.",
+      "O monitoramento ajuda a evitar que agentes avancem sem governança, dados ou integração mínima."
+    ]
+  },
+
+  "closing": {
+    "headline": "O que a leitura arquitetural ajuda a decidir",
+    "lead": "A leitura arquitetural mostra quais capacidades precisam ser habilitadas primeiro, quais AI Flows podem avançar com segurança e quais dependências precisam ser tratadas antes da escala.",
+    "bullets": [
+      "Quais capacidades já podem ser consumidas.",
+      "Quais capacidades precisam ser ajustadas.",
+      "Quais dependências podem bloquear valor.",
+      "Quais capacidades se tornam reutilizáveis.",
+      "Quais decisões precisam anteceder as AI Sprints."
+    ],
+    "microcopy": "Depois de cada AI Flow, a organização acumula capacidades reutilizáveis para novas ondas de desenvolvimento e adoção de IA."
+  }
+}

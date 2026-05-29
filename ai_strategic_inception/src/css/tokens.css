@@ -1,0 +1,73 @@
+/*
+  Tipografia ENG — CocoEng
+  CocoEng-Medium.otf pode ser adicionado depois; o segundo src cobre peso 500 até lá.
+*/
+
+@font-face {
+  font-family: "CocoEng";
+  src: url("../../assets/brand/fonts/CocoEng-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CocoEng";
+  src: url("../../assets/brand/fonts/CocoEng-Medium.otf") format("opentype"),
+    url("../../assets/brand/fonts/CocoEng-Regular.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CocoEng";
+  src: url("../../assets/brand/fonts/CocoEng-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --color-black: #0b0b0f;
+  --color-dark: #15151c;
+  --color-graphite: #252532;
+  --color-white: #ffffff;
+  --color-offwhite: #f7f7fa;
+  --color-surface: #ffffff;
+  --color-line: #e5e7eb;
+  --color-muted: #6b7280;
+  --color-text: #111827;
+  --color-text-soft: #374151;
+
+  --color-magenta: #e6007e;
+  --color-magenta-dark: #b80065;
+  --color-cyan: #00aeef;
+  --color-blue: #3454d1;
+  --color-green: #2fbf71;
+  --color-yellow: #f4b400;
+  --color-red: #e53935;
+
+  --font-primary: "CocoEng", Arial, Helvetica, sans-serif;
+
+  --radius-xs: 6px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --radius-xl: 28px;
+
+  --shadow-soft: 0 12px 32px rgba(11, 11, 15, 0.08);
+  --shadow-card: 0 8px 24px rgba(11, 11, 15, 0.1);
+  --shadow-hover: 0 16px 42px rgba(11, 11, 15, 0.14);
+
+  --space-2xs: 2px;
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+
+  --container-max: 1240px;
+}

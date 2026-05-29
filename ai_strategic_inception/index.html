@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Demo Center da AI Strategic Inception — Snapshot Executivo e Pré-Inception com dados demonstrativos."
+    />
+    <title>AI Strategic Inception · Demo Center</title>
+    <link rel="stylesheet" href="src/css/tokens.css" />
+    <link rel="stylesheet" href="src/css/global.css" />
+    <link rel="stylesheet" href="src/css/components.css" />
+    <link rel="stylesheet" href="src/css/pages.css" />
+    <link rel="stylesheet" href="src/css/print.css" media="print" />
+  </head>
+  <body class="page-executive">
+    <a class="skip-link" href="#conteudo-principal">Ir para o conteúdo principal</a>
+
+    <header class="app-header no-print" role="banner">
+      <div class="container header-bar">
+        <div class="app-header__brand-block">
+          <a href="#executive-snapshot" title="AI Strategic Inception · Demo Center">
+            <img
+              class="brand-logo"
+              src="assets/brand/logos/eng-logo-black.png"
+              alt="Engineering Brasil"
+            />
+            <img
+              class="brand-logo--icon"
+              src="assets/brand/logos/eng-icon-black.png"
+              alt="Engineering Brasil"
+            />
+          </a>
+          <div class="demo-title-stack">
+            <span class="demo-product-name">AI Strategic Inception</span>
+            <span class="demo-client-hint" data-slot="client-chip">Empresa Alpha</span>
+          </div>
+        </div>
+        <span class="badge badge-demo">Dados demonstrativos</span>
+      </div>
+      <div class="container">
+        <nav class="main-nav" aria-label="Navegação principal do Demo Center">
+          <ul>
+            <li>
+              <a class="nav__link" href="#executive-snapshot" data-page="executive-snapshot"
+                >Snapshot Executivo</a
+              >
+            </li>
+            <li>
+              <a class="nav__link" href="#pre-inception" data-page="pre-inception"
+                >Pré-Inception</a
+              >
+            </li>
+            <li>
+              <a class="nav__link" href="#maturity-diagnosis" data-page="maturity-diagnosis"
+                >Diagnóstico de Maturidade</a
+              >
+            </li>
+            <li>
+              <a class="nav__link" href="#target-architecture" data-page="target-architecture"
+                >Arquitetura Alvo</a
+              >
+            </li>
+            <li>
+              <a class="nav__link" href="#ai-flow-backlog" data-page="ai-flow-backlog"
+                >AI Flow Backlog</a
+              >
+            </li>
+            <li>
+              <a class="nav__link" href="#ai-flow-detail" data-page="ai-flow-detail"
+                >Detalhe do AI Flow</a
+              >
+            </li>
+            <li>
+              <a class="nav__link" href="#roadmap-value-case" data-page="roadmap-value-case"
+                >Roadmap &amp; Value Case</a
+              >
+            </li>
+            <li>
+              <a class="nav__link" href="#metrics-dashboard" data-page="metrics-dashboard"
+                >Dashboard de Métricas</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="conteudo-principal" tabindex="-1">
+      <div id="app-error" class="container app-error-banner" hidden></div>
+
+      <!-- ═══ PAGE: Executive Snapshot ═══ -->
+      <div data-page-content="executive-snapshot">
+        <section class="hero page-section" id="executive-snapshot" aria-labelledby="hero-heading">
+          <div class="container">
+            <span class="eyebrow" data-slot="snap-eyebrow"></span>
+            <h1 id="hero-heading" data-slot="snap-headline"></h1>
+            <p class="section-lead" data-slot="snapshot-lead"></p>
+            <p class="hero__disclaimer">
+              <span class="badge badge-neutral">Dados fictícios para fins demonstrativos</span>
+            </p>
+          </div>
+        </section>
+
+        <!-- BLOCO 1: Jornada executiva consolidada -->
+        <section class="page-section" aria-labelledby="journey-heading">
+          <div class="container">
+            <div class="page-intro">
+              <span class="eyebrow">Jornada executiva</span>
+              <h2 id="journey-heading" data-slot="snap-journey-title"></h2>
+              <p class="section-lead" data-slot="snap-journey-lead"></p>
+            </div>
+            <div id="snapshot-journey" class="snap-journey-grid"></div>
+          </div>
+        </section>
+
+        <!-- BLOCO 2: Indicadores consolidados -->
+        <section class="page-section" aria-labelledby="kpi-heading">
+          <div class="container">
+            <div class="page-intro">
+              <span class="eyebrow">Indicadores orientadores consolidados</span>
+              <h2 id="kpi-heading">Oportunidades mapeadas, priorização e faixa de valor estimado</h2>
+            </div>
+            <div id="kpi-grid" class="grid-responsive"></div>
+          </div>
+        </section>
+
+        <!-- BLOCO 3: Plano recomendado de avanço -->
+        <section class="page-section" aria-labelledby="decision-heading">
+          <div class="container">
+            <div class="page-intro">
+              <span class="eyebrow">Recomendação consolidada</span>
+              <h2 id="decision-heading" data-slot="decision-headline"></h2>
+              <p class="section-lead" data-slot="decision-lead"></p>
+            </div>
+            <div id="snap-decision-tracks" class="snap-tracks-grid"></div>
+            <blockquote class="snap-tracks-insight" data-slot="decision-insight"></blockquote>
+          </div>
+        </section>
+
+        <!-- BLOCO 4: Aceleradores -->
+        <section class="page-section" aria-labelledby="snap-attention-heading">
+          <div class="container">
+            <div class="page-intro">
+              <span class="eyebrow">Aceleradores</span>
+              <h2 id="snap-attention-heading">Aceleradores para transformar IA em ROI real</h2>
+            </div>
+            <div id="snap-attention" class="snap-attention-grid"></div>
+          </div>
+        </section>
+
+        <!-- BLOCO 5: Leitura executiva -->
+        <section class="page-section" aria-labelledby="snap-closing-heading">
+          <div class="container">
+            <div class="executive-panel" role="region" aria-labelledby="snap-closing-heading">
+              <span class="eyebrow">Leitura executiva</span>
+              <h2 id="snap-closing-heading" data-slot="snap-closing-title"></h2>
+              <p class="section-lead" data-slot="snap-closing-lead"></p>
+              <ul id="snap-closing-bullets" class="arch-closing-list"></ul>
+              <p class="rvc-microcopy" data-slot="snap-closing-microcopy"></p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- ═══ PAGE: Pré-Inception Qualification ═══ -->
+      <div data-page-content="pre-inception" hidden>
+        <section class="hero hero--compact page-section" id="pre-inception" aria-labelledby="preinception-heading">
+          <div class="container">
+            <span class="eyebrow" data-slot="piq-eyebrow">Qualificação inicial · recorte client-facing</span>
+            <h1 id="preinception-heading" data-slot="piq-headline">Antes de propor IA, é preciso entender onde ela pode gerar valor real</h1>
+            <p class="section-lead" data-slot="piq-lead"></p>
+            <p class="hero__disclaimer">
+              <span class="badge badge-neutral" data-slot="piq-disclaimer">Versão demonstrativa</span>
+            </p>
+          </div>
+        </section>
+
+        <section class="page-section" aria-labelledby="piq-timeline-heading">
+          <div class="container">
+            <h2 id="piq-timeline-heading" class="visually-hidden">Linha do tempo de qualificação</h2>
+            <div id="piq-timeline" class="piq-timeline"></div>
+          </div>
+        </section>
+
+        <section class="page-section" aria-labelledby="piq-usage-heading">
+          <div class="container">
+            <div class="executive-panel" role="region" aria-labelledby="piq-usage-heading">
+              <span class="eyebrow">Como as respostas alimentam o diagnóstico</span>
+              <h2 id="piq-usage-heading" data-slot="piq-usage-title">Como essas respostas serão usadas</h2>
+              <ul id="piq-usage-list" class="piq-usage-list"></ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="page-section piq-closing" aria-labelledby="piq-closing-heading">
+          <div class="container">
+            <h2 id="piq-closing-heading" class="visually-hidden">Nota final</h2>
+            <blockquote class="piq-closing-note" data-slot="piq-closing"></blockquote>
+          </div>
+        </section>
+      </div>
+
+      <!-- ═══ PAGE: Diagnóstico de Maturidade ═══ -->
+      <div data-page-content="maturity-diagnosis" hidden>
+        <section class="hero hero--compact page-section" id="maturity-diagnosis" aria-labelledby="matdiag-heading">
+          <div class="container">
+            <span class="eyebrow">Diagnóstico de maturidade · dados demonstrativos</span>
+            <h1 id="matdiag-heading">A maturidade revela onde a IA pode avançar agora e onde precisa de fundação</h1>
+            <p class="section-lead">Readiness responde se pode ser feito agora. ROI responde se vale a pena fazer. O diagnóstico conecta ambos para orientar decisões sobre AI Flows.</p>
+            <p class="hero__disclaimer">
+              <span class="badge badge-neutral">Dados fictícios para fins demonstrativos</span>
+            </p>
+          </div>
+        </section>
+
+        <section class="page-section" aria-labelledby="radar-heading">
+          <div class="container matdiag-layout">
+            <div>
+              <div class="page-intro">
+                <span class="eyebrow">Output 1 · AS IS</span>
+                <h2 id="radar-heading">Radar AS IS de maturidade para evolução de IA</h2>
+                <p class="section-lead">O radar mostra onde a organização já possui prontidão para avançar com AI Flows e onde precisa preparar fundação antes de escalar IA.</p>
+              </div>
+              <div id="matdiag-radar" class="radar-container" role="img" aria-label="Gráfico radar de maturidade AS IS"></div>
+            </div>
+            <aside class="surface-panel matdiag-scale-panel">
+              <span class="eyebrow">Escala de maturidade</span>
+              <h3>Como interpretar a escala</h3>
+              <dl id="matdiag-scale" class="matdiag-scale-list"></dl>
+              <div class="matdiag-overall-block">
+                <p class="muted-label">Média geral demonstrativa</p>
+                <div class="maturity-overall__value metric-number" data-slot="matdiag-overall">—</div>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="page-section" aria-labelledby="target-heading">
+          <div class="container">
+            <div class="page-intro">
+              <span class="eyebrow">Output 2 · AS IS vs Target Readiness</span>
+              <h2 id="target-heading">Gap até o target por domínio</h2>
+              <p class="section-lead">O gap mostra a distância entre o estado atual e o nível de prontidão necessário para sustentar AI Flows com segurança e escala.</p>
+            </div>
+            <div id="matdiag-target-cards" class="matdiag-target-grid"></div>
+          </div>
+        </section>
+
+        <section class="page-section" aria-labelledby="gapmap-heading">
+          <div class="container">
+            <div class="page-intro">
+              <span class="eyebrow">Output 3 · Gaps e decisões</span>
+              <h2 id="gapmap-heading">Mapa de gaps e decisões por domínio</h2>
+              <p class="section-lead">A leitura dos domínios ajuda a definir quais AI Flows podem avançar agora e quais dependem de preparação de dados, arquitetura, integração ou governança.</p>
+            </div>
+            <div id="matdiag-gaps" class="matdiag-gap-grid"></div>
+          </div>
+        </section>
+
+        <section class="page-section" aria-labelledby="matdiag-closing-heading">
+          <div class="container">
+            <div class="executive-panel" role="region" aria-labelledby="matdiag-closing-heading">
+              <span class="eyebrow">Leitura executiva</span>
+              <h2 id="matdiag-closing-heading">A leitura cruzada orienta a sequência dos AI Flows</h2>
+              <p class="section-lead">A leitura cruzada dos domínios ajuda a definir quais AI Flows podem avançar agora, quais exigem preparação de dados, arquitetura ou governança, e quais métricas devem orientar a evolução com segurança e valor.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- ═══ PAGE: Arquitetura Alvo ═══ -->
+      <div data-page-content="target-architecture" hidden>
+
+        <!-- BLOCO 1: Hero compacto -->
+        <section class="hero hero--compact page-section arch-hero" id="target-architecture" aria-labelledby="arch-heading">
+          <div class="container">
+            <span class="eyebrow" data-slot="arch-eyebrow">OUTPUT 2 · TO BE ARQUITETURAL</span>
+            <h1 id="arch-heading" data-slot="arch-headline">Arquitetura Enterprise para sustentar AI Flows</h1>
+            <p class="section-lead" data-slot="arch-lead"></p>
+            <p class="hero__disclaimer">
+              <span class="badge badge-neutral" data-slot="arch-disclaimer">Dados fictícios para fins demonstrativos</span>
+            </p>
+          </div>
+        </section>
+
+        <!-- BLOCO 2: Stacks AS IS vs AI-Ready -->
+        <section class="page-section" aria-labelledby="arch-comparison-heading">
+          <div class="container">
+            <h2 id="arch-comparison-heading" class="arch-comparison-heading" data-slot="arch-comparison-title">De Arquitetura AS IS a Arquitetura AI-Ready</h2>
+            <div id="arch-comparison" class="arch-comparison"></div>
+          </div>
+        </section>
+
+        <!-- BLOCO 3: AI Flows roadmap -->
+        <section class="page-section" aria-labelledby="arch-waves-heading">
+          <div class="container">
+            <div class="page-intro">
+              <span class="eyebrow">Ondas de desenvolvimento e adoção</span>
+              <h2 id="arch-waves-heading" data-slot="arch-waves-headline">AI Flows como ondas de desenvolvimento e adoção de IA</h2>
+              <p class="section-lead" data-slot="arch-waves-lead"></p>
+            </div>
+            <div id="arch-wave-roadmap"></div>
+            <p class="arch-waves-note" data-slot="arch-waves-note"></p>
+          </div>
+        </section>
+
+        <!-- BLOCO 4: Capacidades arquiteturais -->
+        <section class="page-section arch-diagram-section" aria-labelledby="arch-diagram-heading">
+          <div class="arch-diagram-bg">
+            <div class="container">
+              <div class="page-intro arch-diagram-intro">
+                <span class="eyebrow">Capacidades habilitadoras</span>
+                <h2 id="arch-diagram-heading" data-slot="arch-diagram-headline">Capacidades arquiteturais que habilitam os AI Flows</h2>
+                <p class="section-lead" data-slot="arch-diagram-lead"></p>
+              </div>
+              <div id="arch-diagram" class="arch-diagram"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- BLOCO 5: Heatmap de monitoramento -->
+        <section class="page-section arch-heatmap-section" aria-labelledby="arch-heatmap-heading">
+          <div class="container">
+            <div class="page-intro">
+              <span class="eyebrow">Monitoramento arquitetural</span>
+              <h2 id="arch-heatmap-heading" data-slot="arch-heatmap-headline">Exemplo demonstrativo de monitoramento arquitetural</h2>
+              <p class="section-lead" data-slot="arch-heatmap-lead"></p>
+            </div>
+            <div id="arch-heatmap"></div>
+          </div>
+        </section>
+
+        <!-- BLOCO 6: Leitura executiva -->
+        <section class="page-section" aria-labelledby="arch-closing-heading">
+          <div class="container">
+            <div class="executive-panel" role="region" aria-labelledby="arch-closing-heading">
+              <span class="eyebrow">Leitura executiva</span>
+              <h2 id="arch-closing-heading" data-slot="arch-closing-headline">O que a leitura arquitetural ajuda a decidir</h2>
+              <p class="section-lead" data-slot="arch-closing-lead"></p>
+              <ul id="arch-closing-bullets" class="arch-closing-list"></ul>
+              <p class="arch-closing-microcopy" data-slot="arch-closing-microcopy"></p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- ═══ PAGE: AI Flow Backlog ═══ -->
+      <div data-page-content="ai-flow-backlog" hidden>
+
+        <!-- BLOCO 1: Hero compacto -->
+        <section class="hero hero--compact page-section" id="ai-flow-backlog" aria-labelledby="backlog-heading">
+          <div class="container">
+            <span class="eyebrow" data-slot="backlog-eyebrow">OUTPUT 3 · BACKLOG PRIORIZADO</span>
+            <h1 id="backlog-heading" data-slot="backlog-headline">AI Flow Backlog prioriza ondas de valor com IA</h1>
+            <p class="section-lead" data-slot="backlog-lead"></p>
+            <p class="hero__disclaimer">
+              <span class="badge badge-neutral" data-slot="backlog-disclaimer">Dados fictícios para fins demonstrativos</span>
+            </p>
+          </div>
+        </section>
+
+        <!-- BLOCO 2: Pipeline executivo -->
+        <section class="page-section" aria-labelledby="backlog-funnel-heading">
+          <div class="container">
+            <div class="page-intro">
+              <span class="eyebrow">Visão executiva do backlog</span>
+              <h2 id="backlog-funnel-heading" data-slot="backlog-funnel-title">Do volume de oportunidades ao recorte priorizado</h2>
+              <p class="section-lead" data-slot="backlog-funnel-lead"></p>
+            </div>
+            <div id="backlog-funnel"></div>
+            <blockquote id="backlog-funnel-insight" class="bl-pipeline-insight" data-slot="backlog-funnel-insight"></blockquote>
+          </div>
+        </section>
+
+        <!-- BLOCO 3: Scorecard de priorização -->
+        <section class="page-section" aria-labelledby="backlog-criteria-heading">
+          <div class="container">
+            <div class="page-intro">
+              <span class="eyebrow">Scorecard de priorização</span>
+              <h2 id="backlog-criteria-heading" data-slot="backlog-criteria-title">Scorecard de priorização dos AI Flows</h2>
+              <p class="section-lead" data-slot="backlog-criteria-lead"></p>
+            </div>
+            <div id="backlog-criteria"></div>
+          </div>
+        </section>
+
+        <!-- BLOCO 4: Matriz de priorização -->
+        <section class="page-section" aria-labelledby="backlog-matrix-heading">
+          <div class="container">
+            <div class="page-intro">
+              <span class="eyebrow">Mapa de priorização</span>
+              <h2 id="backlog-matrix-heading" data-slot="backlog-matrix-title">Mapa de priorização por valor e prontidão</h2>
+              <p class="section-lead" data-slot="backlog-matrix-lead"></p>
+            </div>
+            <div id="backlog-matrix"></div>
+          </div>
+        </section>
+
+        <!-- BLOCO 5: Backlog priorizado -->
+        <section class="page-section" aria-labelledby="backlog-cards-heading">
+          <div class="container">
+            <div class="page-intro">
+              <span class="eyebrow">Backlog priorizado</span>
+              <h2 id="backlog-cards-heading" data-slot="backlog-cards-title">Backlog priorizado de AI Flows</h2>
+              <p class="section-lead" data-slot="backlog-cards-lead"></p>
+            </div>
+            <div id="backlog-cards"></div>
+          </div>
+        </section>
+
+        <!-- BLOCO 6: Roadmap de decisão -->
+        <section class="page-section" aria-labelledby="backlog-decision-heading">
+          <div class="container">
+            <div class="page-intro">
+              <span class="eyebrow">Roadmap de decisão</span>
+              <h2 id="backlog-decision-heading" data-slot="backlog-decision-title">Como o backlog orienta as próximas AI Sprints</h2>
+              <p class="section-lead" data-slot="backlog-decision-lead"></p>
+            </div>
+            <div id="backlog-decision-cols"></div>
+          </div>
+        </section>
+
+        <!-- BLOCO 7: Leitura executiva -->
+        <section class="page-section" aria-labelledby="backlog-closing-heading">
+          <div class="container">
+            <div class="executive-panel" role="region" aria-labelledby="backlog-closing-heading">
+              <span class="eyebrow">Leitura executiva</span>
+              <h2 id="backlog-closing-heading" data-slot="backlog-closing-title">O que o AI Flow Backlog ajuda a decidir</h2>
+              <p class="section-lead" data-slot="backlog-closing-lead"></p>
+              <ul id="backlog-closing-bullets" class="arch-closing-list"></ul>
+              <p class="arch-closing-microcopy" data-slot="backlog-closing-microcopy"></p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- ═══ PAGE: Detalhe do AI Flow ═══ -->
+      <div data-page-content="ai-flow-detail" hidden>
+
+        <!-- BLOCO 0: Hero compacto -->
+        <section class="hero hero--compact page-section" id="ai-flow-detail" aria-labelledby="fd-heading">
+          <div class="container">
+            <span class="eyebrow" data-slot="fd-eyebrow">OUTPUT 4 · DETALHAMENTO DA ONDA</span>
+            <h1 id="fd-heading" data-slot="fd-headline">Detalhe do AI Flow transforma prioridade em plano de execução</h1>
+            <p class="section-lead" data-slot="fd-lead"></p>
+            <p class="hero__disclaimer">
+              <span class="badge badge-neutral" data-slot="fd-disclaimer">Dados fictícios para fins demonstrativos</span>
+            </p>
+          </div>
+        </section>
+
+        <!-- BLOCO 1: Visão executiva do AI Flow -->
+        <section class="page-section" aria-labelledby="fd-exec-heading">
+          <div class="container">
+            <div id="fd-executive"></div>
+          </div>
+        </section>
+
+        <!-- BLOCO 2: Canvas do AI Flow -->
+        <section class="page-section" aria-labelledby="fd-canvas-heading">
+          <div class="container">
+            <div class="page-intro">
+              <span class="eyebrow">Canvas do AI Flow</span>
+              <h2 id="fd-canvas-heading" data-slot="fd-canvas-title">Canvas do AI Flow</h2>
+              <p class="section-lead" data-slot="fd-canvas-lead"></p>
+            </div>
+            <div id="fd-canvas"></div>
+          </div>
+        </section>
+
+        <!-- BLOCO 3: Jornada operacional -->
+        <section class="page-section" aria-labelledby="fd-journey-heading">
+          <div class="container">
+            <div class="page-intro">
+              <span class="eyebrow">Jornada operacional</span>
+              <h2 id="fd-journey-heading" data-slot="fd-journey-title">Como a onda opera na prática</h2>
+              <p class="section-lead" data-slot="fd-journey-lead"></p>
+            </div>
+            <div id="fd-journey"></div>
+          </div>
+        </section>
+
+        <!-- BLOCO 4: Plano demonstrativo de AI Sprint -->
+        <section class="page-section" aria-labelledby="fd-sprint-heading">
+          <div class="container">
+            <div class="page-intro">
+              <span class="eyebrow">Plano de AI Sprint</span>
+              <h2 id="fd-sprint-heading" data-slot="fd-sprint-title">Plano demonstrativo para AI Sprint</h2>
+              <p class="section-lead" data-slot="fd-sprint-lead"></p>
+            </div>
+            <div id="fd-sprint"></div>
+            <blockquote class="fd-sprint-insight" data-slot="fd-sprint-insight"></blockquote>
+          </div>
+        </section>
+
+        <!-- BLOCO 5: Riscos, dependências e decisões -->
+        <section class="page-section" aria-labelledby="fd-attention-heading">
+          <div class="container">
+            <div class="page-intro">
+              <span class="eyebrow">Pontos de atenção</span>
+              <h2 id="fd-attention-heading" data-slot="fd-attention-title">Pontos de atenção antes da execução</h2>
+            </div>
+            <div id="fd-attention"></div>
+          </div>
+        </section>
+
+        <!-- BLOCO 6: Leitura executiva -->
+        <section class="page-section" aria-labelledby="fd-closing-heading">
+          <div class="container">
+            <div class="executive-panel" role="region" aria-labelledby="fd-closing-heading">
+              <span class="eyebrow">Leitura executiva</span>
+              <h2 id="fd-closing-heading" data-slot="fd-closing-title">O que o detalhe do AI Flow ajuda a decidir</h2>
+              <p class="section-lead" data-slot="fd-closing-lead"></p>
+              <ul id="fd-closing-bullets" class="arch-closing-list"></ul>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- ═══ PAGE: Roadmap & Value Case ═══ -->
+      <div data-page-content="roadmap-value-case" hidden>
+        <section class="hero page-section" id="roadmap-value-case" aria-labelledby="rvc-heading">
+          <div class="container">
+            <span class="eyebrow" data-slot="rvc-eyebrow">OUTPUT 5 · ROADMAP E VALUE CASE</span>
+            <h1 id="rvc-heading" data-slot="rvc-headline">Roadmap conecta AI Flows, dependências e valor esperado</h1>
+            <p class="section-lead" data-slot="rvc-lead"></p>
+            <p class="hero__disclaimer">
+              <span class="badge badge-neutral" data-slot="rvc-disclaimer">Dados fictícios para fins demonstrativos</span>
+            </p>
+          </div>
+        </section>
+
+        <!-- BLOCO 1: Visão executiva do roadmap -->
+        <section class="page-section" aria-labelledby="rvc-horizons-heading">
+          <div class="container">
+            <div class="page-intro">
+              <span class="eyebrow">Roadmap executivo</span>
+              <h2 id="rvc-horizons-heading" data-slot="rvc-horizons-title">Sequência recomendada de evolução</h2>
+              <p class="section-lead" data-slot="rvc-horizons-lead"></p>
+            </div>
+            <div id="rvc-horizons"></div>
+            <blockquote class="rv-hz__insight" data-slot="rvc-horizons-insight"></blockquote>
+          </div>
+        </section>
+
+        <!-- BLOCO 2: Roadmap por ondas e capacidades acumuladas -->
+        <section class="page-section" aria-labelledby="rvc-waves-heading">
+          <div class="container">
+            <div class="page-intro">
+              <span class="eyebrow">Ondas e capacidades</span>
+              <h2 id="rvc-waves-heading" data-slot="rvc-waves-title">Como as ondas acumulam capacidades reutilizáveis</h2>
+              <p class="section-lead" data-slot="rvc-waves-lead"></p>
+            </div>
+            <div id="rvc-waves"></div>
+            <blockquote class="rv-wv__insight" data-slot="rvc-waves-insight"></blockquote>
+          </div>
+        </section>
+
+        <!-- BLOCO 3: Value Case demonstrativo -->
+        <section class="page-section" aria-labelledby="rvc-vcase-heading">
+          <div class="container">
+            <div class="page-intro">
+              <span class="eyebrow">Value Case</span>
+              <h2 id="rvc-vcase-heading" data-slot="rvc-vcase-title">Value Case demonstrativo por AI Flow</h2>
+              <p class="section-lead" data-slot="rvc-vcase-lead"></p>
+            </div>
+            <div id="rvc-vcase"></div>
+          </div>
+        </section>
+
+        <!-- BLOCO 4: Premissas e dependências críticas -->
+        <section class="page-section" aria-labelledby="rvc-premises-heading">
+          <div class="container">
+            <div class="page-intro">
+              <span class="eyebrow">Premissas e dependências</span>
+              <h2 id="rvc-premises-heading" data-slot="rvc-premises-title">Premissas que condicionam captura de valor</h2>
+              <p class="section-lead" data-slot="rvc-premises-lead"></p>
+            </div>
+            <div id="rvc-premises"></div>
+          </div>
+        </section>
+
+        <!-- BLOCO 5: Cenário demonstrativo de valor -->
+        <section class="page-section" aria-labelledby="rvc-indicators-heading">
+          <div class="container">
+            <div class="page-intro">
+              <span class="eyebrow">Faixa de valor</span>
+              <h2 id="rvc-indicators-heading" data-slot="rvc-indicators-title">Faixa demonstrativa de valor e esforço</h2>
+              <p class="section-lead" data-slot="rvc-indicators-lead"></p>
+            </div>
+            <div id="rvc-indicators"></div>
+          </div>
+        </section>
+
+        <!-- BLOCO 6: Leitura executiva -->
+        <section class="page-section" aria-labelledby="rvc-closing-heading">
+          <div class="container">
+            <div class="executive-panel" role="region" aria-labelledby="rvc-closing-heading">
+              <span class="eyebrow">Leitura executiva</span>
+              <h2 id="rvc-closing-heading" data-slot="rvc-closing-title">O que o Roadmap & Value Case ajuda a decidir</h2>
+              <p class="section-lead" data-slot="rvc-closing-lead"></p>
+              <ul id="rvc-closing-bullets" class="arch-closing-list"></ul>
+              <p class="rvc-microcopy" data-slot="rvc-closing-microcopy"></p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- ═══ PAGE: Dashboard de Métricas ═══ -->
+      <div data-page-content="metrics-dashboard" hidden>
+        <section class="hero page-section" id="metrics-dashboard" aria-labelledby="md-heading">
+          <div class="container">
+            <span class="eyebrow" data-slot="md-eyebrow"></span>
+            <h1 id="md-heading" data-slot="md-headline"></h1>
+            <p class="section-lead" data-slot="md-lead"></p>
+            <p class="hero__disclaimer">
+              <span class="badge badge-neutral" data-slot="md-disclaimer"></span>
+            </p>
+          </div>
+        </section>
+
+        <!-- BLOCO 1: KPIs executivos -->
+        <section class="page-section" aria-labelledby="md-kpis-heading">
+          <div class="container">
+            <div class="page-intro">
+              <span class="eyebrow">Resumo executivo</span>
+              <h2 id="md-kpis-heading" data-slot="md-kpis-title"></h2>
+              <p class="section-lead" data-slot="md-kpis-lead"></p>
+            </div>
+            <div id="md-kpis"></div>
+          </div>
+        </section>
+
+        <!-- BLOCO 2: Scorecard -->
+        <section class="page-section" aria-labelledby="md-sc-heading">
+          <div class="container">
+            <div class="page-intro">
+              <span class="eyebrow">Scorecard</span>
+              <h2 id="md-sc-heading" data-slot="md-sc-title"></h2>
+              <p class="section-lead" data-slot="md-sc-lead"></p>
+            </div>
+            <div id="md-scorecard"></div>
+          </div>
+        </section>
+
+        <!-- BLOCO 3: Evolução -->
+        <section class="page-section" aria-labelledby="md-evo-heading">
+          <div class="container">
+            <div class="page-intro">
+              <span class="eyebrow">Evolução</span>
+              <h2 id="md-evo-heading" data-slot="md-evo-title"></h2>
+              <p class="section-lead" data-slot="md-evo-lead"></p>
+            </div>
+            <div id="md-evolution"></div>
+          </div>
+        </section>
+
+        <!-- BLOCO 4: Dimensões -->
+        <section class="page-section" aria-labelledby="md-dim-heading">
+          <div class="container">
+            <div class="page-intro">
+              <span class="eyebrow">Métricas por dimensão</span>
+              <h2 id="md-dim-heading" data-slot="md-dim-title"></h2>
+              <p class="section-lead" data-slot="md-dim-lead"></p>
+            </div>
+            <div id="md-dimensions"></div>
+          </div>
+        </section>
+
+        <!-- BLOCO 5: Alertas -->
+        <section class="page-section" aria-labelledby="md-alerts-heading">
+          <div class="container">
+            <div class="page-intro">
+              <span class="eyebrow">Alertas</span>
+              <h2 id="md-alerts-heading" data-slot="md-alerts-title"></h2>
+              <p class="section-lead" data-slot="md-alerts-lead"></p>
+            </div>
+            <div id="md-alerts"></div>
+          </div>
+        </section>
+
+        <!-- BLOCO 6: Decisões -->
+        <section class="page-section" aria-labelledby="md-dec-heading">
+          <div class="container">
+            <div class="page-intro">
+              <span class="eyebrow">Decisões recomendadas</span>
+              <h2 id="md-dec-heading" data-slot="md-dec-title"></h2>
+              <p class="section-lead" data-slot="md-dec-lead"></p>
+            </div>
+            <div id="md-decisions"></div>
+          </div>
+        </section>
+
+        <!-- BLOCO 7: Leitura executiva -->
+        <section class="page-section" aria-labelledby="md-closing-heading">
+          <div class="container">
+            <div class="executive-panel" role="region" aria-labelledby="md-closing-heading">
+              <span class="eyebrow">Leitura executiva</span>
+              <h2 id="md-closing-heading" data-slot="md-closing-title"></h2>
+              <p class="section-lead" data-slot="md-closing-lead"></p>
+              <ul id="md-closing-bullets" class="arch-closing-list"></ul>
+              <p class="rvc-microcopy" data-slot="md-closing-microcopy"></p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="app-footer" role="contentinfo">
+      <div class="container footer-content">
+        <p class="footer-brand">AI Strategic Inception · Demo Center</p>
+        <small>
+          <span data-slot="footer-client">Empresa Alpha · Serviços corporativos</span><br />
+          Versão demonstrativa <span data-slot="footer-version">v0.1</span> ·
+          <span data-slot="footer-policy">Dados fictícios para fins demonstrativos</span>
+        </small>
+      </div>
+    </footer>
+
+    <script type="module" src="src/js/app.js"></script>
+    <noscript>
+      <div class="container" style="padding: 2rem 0">
+        <p>Para visualizar o Demo Center é necessário habilitar JavaScript e servir esta pasta via HTTP.</p>
+      </div>
+    </noscript>
+  </body>
+</html>

@@ -1,0 +1,231 @@
+{
+  "eyebrow": "OUTPUT 4 · DETALHAMENTO DA ONDA",
+  "headline": "Detalhe do AI Flow transforma prioridade em plano de execução",
+  "lead": "A página detalha uma onda priorizada, conectando dor de negócio, hipótese de valor, agentes, fluxos, dados, APIs, arquitetura, guardrails, métricas e próximos passos para AI Sprint.",
+  "disclaimer": "Dados fictícios para fins demonstrativos",
+
+  "flowName": "Atendimento Inteligente",
+  "flowSubtitle": "Onda de desenvolvimento e adoção de IA para reduzir tempo de primeira resposta, aumentar resolutividade assistida e diminuir esforço operacional recorrente.",
+  "flowMicrocopy": "AI Flow é uma onda de desenvolvimento e adoção de IA, não um componente técnico.",
+  "executive": {
+    "area": "Atendimento e Operações",
+    "decision": "Avançar",
+    "readiness": "Alto",
+    "risk": "Médio",
+    "horizon": "AI Sprint de até 2 semanas",
+    "expectedValue": "Redução de esforço, melhoria de SLA e aumento de resolutividade assistida"
+  },
+
+  "canvasTitle": "Canvas do AI Flow",
+  "canvasLead": "O canvas conecta valor, operação, dados, APIs, arquitetura, governança e métricas para transformar a onda em um plano executável.",
+  "canvasAreas": [
+    { "label": "Valor e negócio", "color": "magenta", "blocks": ["pain", "hypothesis", "personas"] },
+    { "label": "Execução da onda", "color": "cyan", "blocks": ["agents", "flows"] },
+    { "label": "Fundação técnica", "color": "blue", "blocks": ["data", "apis", "architecture"] },
+    { "label": "Controle e medição", "color": "green", "blocks": ["guardrails", "metrics"] }
+  ],
+  "canvas": [
+    {
+      "id": "pain",
+      "label": "Dor de negócio",
+      "items": ["Alto volume de chamados repetitivos, baixa velocidade de primeira resposta e inconsistência na resolução assistida."]
+    },
+    {
+      "id": "hypothesis",
+      "label": "Hipótese de valor",
+      "items": ["Melhorar tempo de primeira resposta, aumentar parcela resolvida com apoio de agentes e reduzir esforço operacional recorrente com governança explícita."]
+    },
+    {
+      "id": "personas",
+      "label": "Personas e áreas envolvidas",
+      "items": ["Atendimento", "Operações", "TI", "Governança", "Segurança", "Donos da base de conhecimento"]
+    },
+    {
+      "id": "agents",
+      "label": "Agentes previstos",
+      "items": ["Agente de triagem contextual", "Agente de resposta assistida com RAG corporativo", "Agente de roteamento e priorização operacional", "Agente de curadoria de conhecimento"]
+    },
+    {
+      "id": "flows",
+      "label": "Fluxos mapeados",
+      "items": ["Abertura do chamado", "Classificação e política", "Busca em base de conhecimento", "Resposta assistida e revisão humana", "Escalonamento", "Encerramento", "Análise de qualidade assistida"]
+    },
+    {
+      "id": "data",
+      "label": "Dados e conhecimento",
+      "items": ["Histórico de chamados", "Base de artigos e FAQs", "SLAs departamentais", "Perfis de acesso ao conhecimento"]
+    },
+    {
+      "id": "apis",
+      "label": "APIs e integrações",
+      "items": ["Service Desk", "CRM", "Teams", "SharePoint ou repositório de conhecimento", "Gateway de APIs", "Lake analítico histórico"]
+    },
+    {
+      "id": "architecture",
+      "label": "Arquitetura consumida ou adequada",
+      "items": ["Camada de experiência multicanal", "Agentes com RAG federado por domínios", "AI Gateway e políticas de consumo", "Observabilidade de decisões de agentes", "Camada humana obrigatória em temas regulatórios"]
+    },
+    {
+      "id": "guardrails",
+      "label": "Guardrails e governança",
+      "items": ["Fallback humano", "Logs de decisão", "Políticas de autonomia", "Auditoria de respostas", "Classificação de conhecimento", "Limites de uso por perfil"]
+    },
+    {
+      "id": "metrics",
+      "label": "Métricas de valor",
+      "items": ["Tempo de primeira resposta", "Taxa de resolução assistida", "Redução de retrabalho", "Qualidade da resposta", "Taxa de escalonamento", "Custo operacional evitado"]
+    }
+  ],
+
+  "journeyTitle": "Como a onda opera na prática",
+  "journeyLead": "A jornada mostra como o AI Flow atua sobre o processo, conectando entrada, agentes, dados, integrações, revisão humana e melhoria contínua.",
+  "journey": [
+    {
+      "step": 1,
+      "label": "Entrada do chamado",
+      "action": "Registra ou captura o chamado.",
+      "agent": "Não aplicável nesta etapa",
+      "data": "Service Desk, CRM ou canal digital",
+      "control": "Classificação automática de prioridade"
+    },
+    {
+      "step": 2,
+      "label": "Triagem contextual",
+      "action": "Classifica por tipo, política e urgência.",
+      "agent": "Agente de triagem contextual",
+      "data": "SLAs departamentais",
+      "control": "Política de autonomia por tema"
+    },
+    {
+      "step": 3,
+      "label": "Busca e resposta assistida",
+      "action": "Busca em base de conhecimento e propõe resposta.",
+      "agent": "Agente de resposta assistida com RAG corporativo",
+      "data": "Base de artigos, FAQs e histórico",
+      "control": "Auditoria de resposta e fontes de uso"
+    },
+    {
+      "step": 4,
+      "label": "Revisão humana",
+      "action": "Revisa quando houver tema regulatório ou sensível.",
+      "agent": "Supervisão humana obrigatória",
+      "data": "Fila de revisão do agente",
+      "control": "Fallback humano obrigatório"
+    },
+    {
+      "step": 5,
+      "label": "Roteamento ou resolução",
+      "action": "Encaminha para grupo responsável ou resolve.",
+      "agent": "Agente de roteamento e priorização operacional",
+      "data": "Filas, grupos, SLAs e status",
+      "control": "Classificação de conhecimento"
+    },
+    {
+      "step": 6,
+      "label": "Medição e melhoria contínua",
+      "action": "Avalia qualidade, SLA e curadoria de conhecimento.",
+      "agent": "Agente de curadoria de conhecimento",
+      "data": "Dashboards, indicadores e valor",
+      "control": "Logs de decisão e indicadores de valor"
+    }
+  ],
+
+  "sprintTitle": "Plano demonstrativo para AI Sprint",
+  "sprintLead": "A AI Sprint detalha, valida e prepara a onda para execução controlada, conectando valor, agentes, dados, APIs, governança e métricas em até 2 semanas.",
+  "sprintInsight": "AI Flow validado em escopo controlado, com hipóteses de valor, dependências, riscos, métricas e plano de evolução documentados.",
+  "sprintTracks": ["Negócio e processo", "Agentes e prompts", "Dados e conhecimento", "APIs e arquitetura", "Governança e métricas"],
+  "sprintPhases": [
+    {
+      "label": "Dia 1–2",
+      "title": "Refinamento do escopo e critérios de sucesso",
+      "objective": "Alinhar valor, escopo, stakeholders e critérios de decisão.",
+      "tasks": [
+        ["Mapear atores prioritários", "Definir critérios de sucesso", "Validar hipótese de valor"],
+        ["Identificar agentes candidatos", "Definir limites de comportamento", "Mapear personas e papéis do agente"],
+        ["Listar fontes de dados necessárias", "Avaliar qualidade e disponibilidade", "Mapear perfis de acesso"],
+        ["Validar APIs disponíveis", "Mapear integrações necessárias", "Avaliar gateways e conectores"],
+        ["Listar requisitos de governança", "Definir métricas de sucesso", "Mapear riscos conhecidos"]
+      ]
+    },
+    {
+      "label": "Dia 3–5",
+      "title": "Desenho dos fluxos, dados e integrações",
+      "objective": "Mapear jornada operacional, fontes de dados, APIs e dependências arquiteturais.",
+      "tasks": [
+        ["Desenhar fluxo AS IS e TO BE", "Mapear pontos de decisão humana", "Validar SLAs alvo"],
+        ["Especificar prompts e comportamento dos agentes", "Definir estratégia de fallback", "Mapear trilha de revisão humana"],
+        ["Estruturar base de conhecimento", "Classificar artigos e FAQs", "Definir política de ingestão"],
+        ["Desenhar integração Service Desk e CRM", "Configurar gateway de APIs", "Mapear conectores SharePoint"],
+        ["Definir política de autonomia", "Estruturar logs de auditoria", "Criar baseline de métricas"]
+      ]
+    },
+    {
+      "label": "Dia 6–8",
+      "title": "Validação controlada dos agentes e guardrails",
+      "objective": "Validar comportamento esperado, controles, limites de autonomia e revisão humana.",
+      "tasks": [
+        ["Testar fluxo com usuários piloto", "Coletar feedback do atendimento", "Ajustar critérios de escalonamento"],
+        ["Validar agente de triagem", "Validar agente de resposta", "Ajustar qualidade das respostas"],
+        ["Validar respostas com base curada", "Testar cobertura do conhecimento", "Ajustar curadoria de dados"],
+        ["Integrar agentes com Service Desk", "Testar chamadas via API", "Validar observabilidade"],
+        ["Aplicar guardrails na prototipação", "Testar fallback humano", "Registrar decisões dos agentes"]
+      ]
+    },
+    {
+      "label": "Dia 9–10",
+      "title": "Validação executiva, plano de escala e backlog técnico",
+      "objective": "Consolidar aprendizados, métricas, riscos e próximos passos para execução.",
+      "tasks": [
+        ["Apresentar resultados ao sponsor", "Validar valor demonstrado", "Definir critérios de avanço"],
+        ["Consolidar backlog de evolução dos agentes", "Documentar prompts finais", "Definir roadmap de aprendizado"],
+        ["Documentar fontes validadas", "Planejar curadoria contínua", "Definir responsáveis por conteúdo"],
+        ["Documentar integrações validadas", "Mapear escala de infraestrutura", "Listar dependências técnicas"],
+        ["Consolidar métricas coletadas", "Apresentar indicadores de valor", "Definir plano de governança contínua"]
+      ]
+    }
+  ],
+
+  "attentionTitle": "Pontos de atenção antes da execução",
+  "attentionColumns": [
+    {
+      "label": "Dependências críticas",
+      "type": "dependency",
+      "items": [
+        "Qualidade da base de conhecimento",
+        "APIs de atendimento disponíveis",
+        "Política de autonomia dos agentes",
+        "Donos de conteúdo definidos"
+      ]
+    },
+    {
+      "label": "Riscos",
+      "type": "risk",
+      "items": [
+        "Respostas inconsistentes",
+        "Baixa adesão operacional",
+        "Dados sensíveis sem classificação",
+        "Escalonamento humano mal definido"
+      ]
+    },
+    {
+      "label": "Decisões necessárias",
+      "type": "decision",
+      "items": [
+        "Quais temas podem ter resposta assistida",
+        "Quando exigir revisão humana",
+        "Quais métricas serão usadas para medir valor",
+        "Quais integrações entram na primeira AI Sprint"
+      ]
+    }
+  ],
+
+  "closingTitle": "O que o detalhe do AI Flow ajuda a decidir",
+  "closingLead": "O detalhamento do AI Flow traduz uma prioridade do backlog em uma visão executável, conectando valor, operação, tecnologia, governança e métricas antes da AI Sprint.",
+  "closingBullets": [
+    "O que será validado na AI Sprint.",
+    "Quais capacidades precisam estar disponíveis.",
+    "Quais riscos precisam ser mitigados.",
+    "Quais métricas demonstram valor.",
+    "Quais decisões precisam ser tomadas antes da execução."
+  ]
+}

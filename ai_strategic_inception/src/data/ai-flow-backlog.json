@@ -1,0 +1,237 @@
+{
+  "eyebrow": "OUTPUT 3 · BACKLOG PRIORIZADO",
+  "headline": "AI Flow Backlog prioriza ondas de valor com IA",
+  "lead": "O backlog organiza oportunidades identificadas na Inception e traduz hipóteses de IA em ondas priorizadas por valor, prontidão, dependências, risco e capacidade de execução.",
+  "disclaimer": "Dados fictícios para fins demonstrativos",
+
+  "funnelTitle": "Do volume de oportunidades ao recorte priorizado",
+  "funnelLead": "A Inception transforma hipóteses dispersas em AI Flows priorizados, conectando valor, prontidão, dependências, risco e capacidade de execução.",
+  "funnelInsight": "Nem toda oportunidade deve virar AI Sprint. O backlog separa volume, prioridade e prontidão para orientar decisões de avanço, preparação ou ajuste.",
+  "funnel": [
+    {
+      "label": "Oportunidades identificadas",
+      "value": 18,
+      "description": "Hipóteses levantadas a partir de entrevistas, dores, dados, processos e sistemas.",
+      "output": "Inventário inicial de oportunidades"
+    },
+    {
+      "label": "AI Flows candidatos",
+      "value": 8,
+      "description": "Frentes agrupadas por domínio de negócio, potencial de valor e viabilidade inicial.",
+      "output": "Agrupamento por ondas de valor"
+    },
+    {
+      "label": "AI Flows priorizados",
+      "value": 5,
+      "description": "Ondas avaliadas por impacto, prontidão, dependências, risco e esforço.",
+      "output": "Backlog priorizado"
+    },
+    {
+      "label": "Recomendados para avanço imediato",
+      "value": 2,
+      "description": "Ondas com melhor combinação entre valor, maturidade e capacidade de execução.",
+      "output": "Entrada para AI Sprints"
+    }
+  ],
+
+  "criteriaTitle": "Scorecard de priorização dos AI Flows",
+  "criteriaLead": "A priorização combina valor para o negócio com os domínios do Diagnóstico de Maturidade, conectando prontidão, risco, arquitetura, dados, governança e capacidade de medir ROI.",
+  "criteriaPanelTitle": "Modelo demonstrativo de ponderação",
+  "criteriaNote": "Pesos demonstrativos. A calibragem final deve ser ajustada conforme estratégia, risco e contexto do cliente.",
+  "criteriaMicrocopy": "Valor responde se vale a pena fazer. Readiness responde se pode avançar agora.",
+  "criteriaGroups": [
+    {
+      "group": "Valor",
+      "items": [
+        {
+          "name": "Valor para o negócio",
+          "weight": 25,
+          "description": "Impacto potencial em custo, produtividade, receita, experiência, risco ou eficiência operacional."
+        }
+      ]
+    },
+    {
+      "group": "Prontidão de IA e adoção",
+      "items": [
+        {
+          "name": "AI Maturity",
+          "weight": 10,
+          "description": "Nível de estruturação das iniciativas de IA, casos existentes, padrões de uso e capacidade de evoluir AI Flows."
+        },
+        {
+          "name": "AI Culture & Adoption",
+          "weight": 10,
+          "description": "Letramento em IA, preparo das áreas, patrocínio, confiança no uso e capacidade de adoção operacional."
+        }
+      ]
+    },
+    {
+      "group": "Prontidão técnica e dados",
+      "items": [
+        {
+          "name": "Data Readiness",
+          "weight": 15,
+          "description": "Disponibilidade, qualidade, governança e acessibilidade das fontes necessárias para uso por IA."
+        },
+        {
+          "name": "API & Integration",
+          "weight": 10,
+          "description": "APIs, integrações, conectores e mecanismos de acesso necessários para que agentes e fluxos consumam capacidades corporativas."
+        },
+        {
+          "name": "Architecture Readiness",
+          "weight": 10,
+          "description": "Capacidade arquitetural para sustentar agentes, governança, observabilidade, operação e escala."
+        }
+      ]
+    },
+    {
+      "group": "Governança e ROI",
+      "items": [
+        {
+          "name": "Governance & Risk",
+          "weight": 10,
+          "description": "LGPD, rastreabilidade, autonomia dos agentes, aprovação humana, auditoria e guardrails."
+        },
+        {
+          "name": "ROI Readiness",
+          "weight": 10,
+          "description": "Existência de baseline, métricas, sponsor e indicadores de valor para medir evolução dos AI Flows."
+        }
+      ]
+    }
+  ],
+
+  "matrixTitle": "Mapa de priorização por valor e prontidão",
+  "matrixLead": "A matriz ajuda a separar ondas que podem avançar agora daquelas que dependem de fundação, ajuste de escopo ou amadurecimento.",
+  "matrix": {
+    "axisY": "Valor esperado",
+    "axisX": "Prontidão para execução",
+    "quadrants": [
+      {
+        "id": "advance",
+        "label": "Avançar agora",
+        "description": "Alto valor e alta prontidão",
+        "items": ["Atendimento Inteligente", "Modernização Assistida"]
+      },
+      {
+        "id": "prepare",
+        "label": "Preparar fundação",
+        "description": "Alto valor e baixa prontidão",
+        "items": ["Conhecimento Corporativo Governado", "Operação Assistida por Agentes"]
+      },
+      {
+        "id": "adjust",
+        "label": "Ajustar escopo",
+        "description": "Valor médio ou incerteza alta",
+        "items": ["Triagem Inteligente de Documentos"]
+      },
+      {
+        "id": "monitor",
+        "label": "Monitorar",
+        "description": "Baixo valor ou baixa prioridade atual",
+        "items": ["Análise Preditiva Operacional", "Copilot Financeiro", "Assistente de Compliance"]
+      }
+    ]
+  },
+
+  "backlogTitle": "Backlog priorizado de AI Flows",
+  "backlogLead": "Cada AI Flow é uma onda de desenvolvimento e adoção de IA, com hipótese de valor, dependências, decisão recomendada e próximos passos.",
+  "backlog": [
+    {
+      "rank": 1,
+      "name": "Atendimento Inteligente",
+      "area": "Atendimento e Operações",
+      "hypothesis": "Reduzir tempo de primeira resposta, aumentar resolutividade assistida e diminuir esforço operacional recorrente.",
+      "enablers": ["Base de conhecimento", "APIs de atendimento", "Agentes de triagem", "Fallback humano"],
+      "dependencies": ["Qualidade da base de conhecimento", "Service Desk", "CRM", "Política de autonomia"],
+      "risk": "Médio",
+      "readiness": "Alto",
+      "decision": "Avançar"
+    },
+    {
+      "rank": 2,
+      "name": "Modernização Assistida",
+      "area": "TI e Negócio Digital",
+      "hypothesis": "Acelerar leitura de legado, mapear dependências e expor capacidades de sistemas via APIs de forma incremental.",
+      "enablers": ["Inventário técnico", "APIs existentes", "Contratos de serviço", "Agentes de leitura de legado"],
+      "dependencies": ["Repositórios", "Documentação técnica", "Gateways corporativos"],
+      "risk": "Médio",
+      "readiness": "Médio",
+      "decision": "Avançar"
+    },
+    {
+      "rank": 3,
+      "name": "Conhecimento Corporativo Governado",
+      "area": "Tecnologia e Backoffice",
+      "hypothesis": "Centralizar conhecimento crítico, melhorar acurácia de respostas assistidas e criar base reutilizável para novos AI Flows.",
+      "enablers": ["Curadoria documental", "Classificação de sensibilidade", "Catálogo", "RAG corporativo"],
+      "dependencies": ["Owners de conteúdo", "Política de retenção", "Critérios de atualização"],
+      "risk": "Médio-alto",
+      "readiness": "Médio-baixo",
+      "decision": "Preparar fundação"
+    },
+    {
+      "rank": 4,
+      "name": "Operação Assistida por Agentes",
+      "area": "Operações Corporativas",
+      "hypothesis": "Acelerar detecção, priorização contextual e sugestão de playbooks mantendo controle humano.",
+      "enablers": ["Playbooks", "Monitoramento", "CMDB", "AI Gateway", "Limites de automação"],
+      "dependencies": ["CMDB", "Observabilidade", "Janelas de ação", "Aprovação humana"],
+      "risk": "Alto",
+      "readiness": "Baixo-médio",
+      "decision": "Preparar fundação"
+    },
+    {
+      "rank": 5,
+      "name": "Triagem Inteligente de Documentos",
+      "area": "Backoffice Corporativo",
+      "hypothesis": "Reduzir esforço manual de leitura, classificação e roteamento de documentos.",
+      "enablers": ["OCR", "LLM especializado", "Revisão humana", "Armazenamento seguro"],
+      "dependencies": ["Layouts documentais", "Regras de negócio", "Classificação LGPD"],
+      "risk": "Médio",
+      "readiness": "Médio",
+      "decision": "Ajustar escopo"
+    }
+  ],
+
+  "decisionTitle": "Como o backlog orienta as próximas AI Sprints",
+  "decisionLead": "A leitura do backlog define quais ondas avançam para AI Sprint, quais precisam de fundação e quais exigem refinamento antes da execução.",
+  "decisionColumns": [
+    {
+      "label": "Avançar para AI Sprint",
+      "decision": "Avançar",
+      "items": ["Atendimento Inteligente", "Modernização Assistida"],
+      "objective": "Iniciar a primeira AI Sprint com escopo delimitado, agentes definidos e métricas de valor preparadas.",
+      "criterion": "Melhor combinação entre valor, prontidão e capacidade de execução.",
+      "nextStep": "Definir escopo da Sprint, stakeholders, métricas e critérios de aceite."
+    },
+    {
+      "label": "Preparar fundação",
+      "decision": "Preparar fundação",
+      "items": ["Conhecimento Corporativo Governado", "Operação Assistida por Agentes"],
+      "objective": "Preparar camadas de dados, governança e integração antes da execução.",
+      "criterion": "Alto valor, mas dependências de dados, governança ou arquitetura ainda não resolvidas.",
+      "nextStep": "Mapear dependências, definir plano de fundação e critérios de entrada para Sprint."
+    },
+    {
+      "label": "Ajustar escopo",
+      "decision": "Ajustar escopo",
+      "items": ["Triagem Inteligente de Documentos"],
+      "objective": "Refinar hipótese de valor, escopo e premissas antes de priorizar para Sprint.",
+      "criterion": "Valor presente, mas incerteza sobre escopo, viabilidade ou métricas.",
+      "nextStep": "Revisitar hipótese de valor, refinar escopo e validar premissas com stakeholders."
+    }
+  ],
+
+  "closingTitle": "O que o AI Flow Backlog ajuda a decidir",
+  "closingLead": "O backlog priorizado ajuda a transformar hipóteses de IA em decisões objetivas de sequência, investimento, dependências e preparação para execução.",
+  "closingBullets": [
+    "Quais AI Flows têm melhor combinação entre valor e prontidão.",
+    "Quais dependem de dados, APIs, governança ou arquitetura antes da execução.",
+    "Quais ondas devem entrar primeiro em AI Sprints.",
+    "Quais hipóteses precisam ser refinadas antes de avançar.",
+    "Quais métricas devem ser preparadas para medir valor."
+  ],
+  "closingMicrocopy": "AI Flow é uma onda de desenvolvimento e adoção de IA, não um componente técnico."
+}

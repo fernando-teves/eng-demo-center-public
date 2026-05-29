@@ -1,0 +1,117 @@
+{
+  "eyebrow": "OUTPUT 6 · MÉTRICAS DE EVOLUÇÃO",
+  "headline": "Dashboard acompanha valor, adoção e governança dos AI Flows",
+  "lead": "A página consolida indicadores demonstrativos para acompanhar evolução dos AI Flows, medindo valor capturado, adoção operacional, qualidade, governança, risco e prontidão para escala.",
+  "disclaimer": "Dados fictícios para fins demonstrativos",
+
+  "kpisTitle": "Resumo executivo dos AI Flows monitorados",
+  "kpisLead": "O dashboard organiza métricas de valor, adoção, operação, governança e risco para apoiar decisões de continuidade, ajuste ou escala.",
+  "kpis": [
+    { "label": "AI Flows monitorados", "value": "5", "note": "Ondas priorizadas acompanhadas no ciclo demonstrativo." },
+    { "label": "AI Flows com avanço imediato", "value": "2", "note": "Ondas com maior combinação entre valor e prontidão." },
+    { "label": "Valor potencial priorizado", "value": "R$ 1,2M", "note": "Estimativa demonstrativa do subconjunto priorizado." },
+    { "label": "Payback estimado", "value": "3 a 5 meses", "note": "Cenário ilustrativo sob premissas de adoção e escopo definido." },
+    { "label": "Redução de esforço estimada", "value": "20% a 35%", "note": "Faixa combinada para processos alvo." },
+    { "label": "Riscos críticos abertos", "value": "3", "note": "Pontos relacionados a dados, integração e governança." }
+  ],
+
+  "scorecardTitle": "Scorecard demonstrativo por AI Flow",
+  "scorecardLead": "Cada AI Flow é acompanhado por valor, adoção, qualidade, governança e risco para orientar continuidade ou ajuste.",
+  "scorecardCols": ["Valor", "Adoção", "Qualidade", "Governança", "Risco", "Decisão"],
+  "scorecardRows": [
+    { "name": "Atendimento Inteligente", "cells": ["Alto", "Alta", "Média-alta", "Em evolução", "Médio", "Escalar controlado"] },
+    { "name": "Modernização Assistida", "cells": ["Médio-alto", "Média", "Média", "Em evolução", "Médio", "Avançar"] },
+    { "name": "Conhecimento Corporativo Governado", "cells": ["Alto indireto", "Média", "Em evolução", "Crítico", "Médio-alto", "Preparar fundação"] },
+    { "name": "Triagem Inteligente de Documentos", "cells": ["Médio", "Baixa-média", "Média", "Em evolução", "Médio", "Ajustar escopo"] },
+    { "name": "Operação Assistida por Agentes", "cells": ["Alto potencial", "Baixa", "Em evolução", "Crítico", "Alto", "Preparar fundação"] }
+  ],
+
+  "evolutionTitle": "Evolução demonstrativa de valor e adoção",
+  "evolutionLead": "A leitura combina métricas de valor, uso e maturidade para identificar se as ondas estão gerando aprendizado e resultado.",
+  "evolutionCharts": [
+    {
+      "title": "Valor capturado estimado",
+      "bars": [
+        { "label": "Mês 1", "value": 120, "display": "R$ 120k" },
+        { "label": "Mês 2", "value": 280, "display": "R$ 280k" },
+        { "label": "Mês 3", "value": 520, "display": "R$ 520k" },
+        { "label": "Mês 4", "value": 850, "display": "R$ 850k" },
+        { "label": "Mês 5", "value": 1200, "display": "R$ 1,2M" }
+      ],
+      "max": 1200
+    },
+    {
+      "title": "Adoção operacional",
+      "bars": [
+        { "label": "Mês 1", "value": 12, "display": "12%" },
+        { "label": "Mês 2", "value": 24, "display": "24%" },
+        { "label": "Mês 3", "value": 38, "display": "38%" },
+        { "label": "Mês 4", "value": 51, "display": "51%" },
+        { "label": "Mês 5", "value": 63, "display": "63%" }
+      ],
+      "max": 100
+    },
+    {
+      "title": "Readiness médio dos AI Flows",
+      "bars": [
+        { "label": "Mês 1", "value": 2.3, "display": "2.3 / 5" },
+        { "label": "Mês 2", "value": 2.7, "display": "2.7 / 5" },
+        { "label": "Mês 3", "value": 3.1, "display": "3.1 / 5" },
+        { "label": "Mês 4", "value": 3.4, "display": "3.4 / 5" },
+        { "label": "Mês 5", "value": 3.7, "display": "3.7 / 5" }
+      ],
+      "max": 5
+    }
+  ],
+
+  "dimensionsTitle": "Métricas acompanhadas por dimensão",
+  "dimensionsLead": "O acompanhamento deve equilibrar resultado de negócio, eficiência operacional, qualidade, governança e evolução técnica.",
+  "dimensions": [
+    { "label": "Valor para o negócio", "items": ["ROI potencial priorizado", "Custo evitado", "Produtividade capturada", "Payback estimado"] },
+    { "label": "Adoção operacional", "items": ["Usuários ativos", "Uso recorrente", "Taxa de adesão", "Satisfação dos usuários"] },
+    { "label": "Qualidade e eficiência", "items": ["Tempo de resposta", "Taxa de resolução assistida", "Retrabalho", "Acurácia da resposta"] },
+    { "label": "Governança e risco", "items": ["Decisões auditadas", "Casos com revisão humana", "Incidentes de política", "Dados sensíveis tratados"] },
+    { "label": "Arquitetura e operação", "items": ["APIs consumidas", "Disponibilidade", "Latência", "Observabilidade", "Erros e exceções"] }
+  ],
+
+  "alertsTitle": "Alertas demonstrativos para decisão executiva",
+  "alertsLead": "O dashboard destaca riscos e dependências que podem limitar a captura de valor ou impedir escala segura.",
+  "alerts": [
+    { "title": "Governança crítica em AI Flows de maior autonomia", "description": "Operação Assistida por Agentes exige políticas de autonomia, aprovação humana e auditoria antes de escala.", "severity": "Alta" },
+    { "title": "Dados e conhecimento ainda em fundação", "description": "Conhecimento Corporativo Governado depende de owners, curadoria e classificação para reduzir risco de respostas inconsistentes.", "severity": "Alta" },
+    { "title": "Integrações condicionam valor operacional", "description": "Atendimento Inteligente e Modernização Assistida dependem de APIs, Service Desk, CRM e gateways corporativos.", "severity": "Média" },
+    { "title": "Métricas de ROI precisam de baseline real", "description": "As metas demonstrativas precisam ser recalibradas com dados reais de volume, esforço, tempo e custo.", "severity": "Média" }
+  ],
+
+  "decisionsTitle": "Decisões recomendadas para o próximo ciclo",
+  "decisionsLead": "A leitura consolidada orienta quais AI Flows devem escalar, quais precisam de fundação e quais devem ser ajustados antes de nova sprint.",
+  "decisionCols": [
+    {
+      "label": "Escalar controlado",
+      "flows": ["Atendimento Inteligente"],
+      "next": "Expandir escopo com governança e métricas de valor."
+    },
+    {
+      "label": "Avançar com preparação",
+      "flows": ["Modernização Assistida", "Conhecimento Corporativo Governado"],
+      "next": "Tratar dependências técnicas, dados e owners antes de ampliar uso."
+    },
+    {
+      "label": "Preparar ou ajustar",
+      "flows": ["Triagem Inteligente de Documentos", "Operação Assistida por Agentes"],
+      "next": "Refinar escopo, governança, métricas e limites de autonomia."
+    }
+  ],
+
+  "closingTitle": "O que o Dashboard de Métricas ajuda a decidir",
+  "closingLead": "O Dashboard de Métricas transforma a evolução dos AI Flows em uma leitura executiva contínua, conectando valor, adoção, qualidade, governança, risco e prontidão para escala.",
+  "closingBullets": [
+    "Quais AI Flows estão capturando valor.",
+    "Quais ondas podem escalar com segurança.",
+    "Quais dependências impedem avanço.",
+    "Quais métricas precisam ser recalibradas.",
+    "Quais riscos exigem decisão executiva.",
+    "Quais próximos passos devem entrar no ciclo seguinte."
+  ],
+  "closingMicrocopy": "AI Flow é uma onda de desenvolvimento e adoção de IA, não um componente técnico."
+}

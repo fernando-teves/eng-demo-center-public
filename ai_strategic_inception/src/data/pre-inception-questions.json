@@ -1,0 +1,147 @@
+{
+  "pageTitle": "Pré-Inception Qualification",
+  "eyebrow": "Qualificação inicial · recorte client-facing",
+  "headline": "Antes de propor IA, é preciso entender onde ela pode gerar valor real",
+  "lead": "As respostas do Pré-Inception alimentam os domínios do diagnóstico, ajudam a delimitar escopo e antecipam hipóteses de AI Flows antes do kickoff da Inception.",
+  "supportMessage": "As respostas ajudam a preparar uma Inception mais objetiva, reduzindo dispersão e conectando ambição, viabilidade e valor desde o início.",
+  "disclaimer": "Versão demonstrativa. Preparada para futura replicação em Microsoft Forms.",
+  "closingNote": "Este questionário não substitui o diagnóstico da Inception. Ele antecipa contexto, ambição e restrições para que a primeira etapa da jornada comece com foco, evidências e critérios claros de decisão.",
+  "usageTitle": "Como essas respostas alimentam o diagnóstico",
+  "usageItems": [
+    "Delimitar escopo da Inception",
+    "Identificar stakeholders e patrocinadores",
+    "Mapear hipóteses iniciais de AI Flows",
+    "Antecipar riscos conhecidos",
+    "Entender stacks habilitadoras e restrições",
+    "Preparar proposta técnica e comercial",
+    "Orientar o kickoff da Inception com contexto estruturado"
+  ],
+  "moments": [
+    { "id": "moment-1", "label": "Contexto e ambição", "number": 1, "blocks": ["block-1", "block-2"] },
+    { "id": "moment-2", "label": "Oportunidades e uso atual de IA", "number": 2, "blocks": ["block-3", "block-4"] },
+    { "id": "moment-3", "label": "Dados, arquitetura e stacks habilitadoras", "number": 3, "blocks": ["block-5", "block-6", "block-7"] },
+    { "id": "moment-4", "label": "Governança, ROI e continuidade", "number": 4, "blocks": ["block-8"] }
+  ],
+  "blocks": [
+    {
+      "id": "block-1",
+      "number": 1,
+      "title": "Identificação e contexto",
+      "badge": "Contexto",
+      "domainBadge": "Estratégia",
+      "objective": "Entender quem participa, qual o papel na jornada de IA e como direcionar as conversas iniciais.",
+      "questions": [
+        { "text": "Nome completo", "type": "Texto curto" },
+        { "text": "Cargo e área de atuação", "type": "Texto curto" },
+        { "text": "E-mail corporativo", "type": "Texto curto" },
+        { "text": "Qual é o seu papel na jornada de IA da empresa?", "type": "Texto livre" }
+      ]
+    },
+    {
+      "id": "block-2",
+      "number": 2,
+      "title": "Estratégia e visão de futuro",
+      "badge": "Estratégia",
+      "domainBadge": "AI Maturity",
+      "objective": "Capturar ambição, prioridades de negócio e expectativa de decisão ao final da Inception.",
+      "questions": [
+        { "text": "Qual é a ambição da empresa com IA nos próximos 12 a 24 meses?", "type": "Texto livre" },
+        { "text": "Quais objetivos de negócio a IA deveria apoiar?", "type": "Texto livre" },
+        { "text": "A prioridade atual está mais relacionada a produtividade, redução de custos, aumento de receita, experiência do cliente, risco, compliance, inovação ou eficiência operacional?", "type": "Múltipla escolha" },
+        { "text": "Existe uma visão formal de IA aprovada pela liderança?", "type": "Sim / Não / Parcial" },
+        { "text": "Ao final da Inception, que decisão a empresa espera estar pronta para tomar?", "type": "Texto livre" }
+      ]
+    },
+    {
+      "id": "block-3",
+      "number": 3,
+      "title": "Dores, oportunidades e áreas prioritárias",
+      "badge": "Dores",
+      "domainBadge": "AI Culture & Adoption",
+      "objective": "Identificar onde existem gargalos, retrabalho ou oportunidades concretas para ondas de valor com IA.",
+      "questions": [
+        { "text": "Quais áreas ou processos deveriam ser priorizados nesta primeira análise?", "type": "Texto livre" },
+        { "text": "Quais processos hoje consomem mais tempo, pessoas ou custo operacional?", "type": "Texto livre" },
+        { "text": "Onde existem gargalos relevantes de produtividade, decisão, atendimento ou operação?", "type": "Texto livre" },
+        { "text": "Quais atividades dependem de leitura, análise, classificação ou consolidação manual de informações?", "type": "Texto livre" },
+        { "text": "Existem ideias ou casos de uso de IA já levantados internamente?", "type": "Sim / Não + descrição" }
+      ]
+    },
+    {
+      "id": "block-4",
+      "number": 4,
+      "title": "Uso atual de IA e Shadow AI",
+      "badge": "IA atual",
+      "domainBadge": "AI Maturity",
+      "objective": "Mapear o que já existe em uso formal ou informal de IA, incluindo riscos de Shadow AI.",
+      "questions": [
+        { "text": "A empresa já utiliza ferramentas de IA de forma oficial?", "type": "Sim / Não" },
+        { "text": "Quais ferramentas de IA estão homologadas, contratadas ou em avaliação?", "type": "Texto livre" },
+        { "text": "Existe uso informal de ferramentas como ChatGPT, Copilot, Gemini, Claude ou similares pelas equipes?", "type": "Sim / Não / Não sabemos" },
+        { "text": "Existem políticas internas para uso de IA generativa?", "type": "Sim / Não / Em elaboração" },
+        { "text": "Existem casos de IA já em produção? Se sim, quais?", "type": "Texto livre" },
+        { "text": "Existem pilotos ou iniciativas de IA que não avançaram? Se sim, por quais motivos?", "type": "Texto livre" }
+      ]
+    },
+    {
+      "id": "block-5",
+      "number": 5,
+      "title": "Dados e conhecimento corporativo",
+      "badge": "Dados",
+      "domainBadge": "Data Readiness",
+      "objective": "Entender fontes, qualidade, governança e restrições dos dados que sustentariam AI Flows.",
+      "questions": [
+        { "text": "Quais são as principais fontes de dados e conhecimento da empresa?", "type": "Texto livre" },
+        { "text": "A empresa possui data lake, data warehouse, lakehouse ou plataforma analítica?", "type": "Sim / Não / Parcial" },
+        { "text": "Onde estão armazenados os principais documentos corporativos?", "type": "Texto livre" },
+        { "text": "Existem problemas conhecidos de qualidade, acesso, duplicidade ou governança dos dados?", "type": "Texto livre" },
+        { "text": "Existem dados sensíveis, confidenciais ou regulados que precisam ser considerados?", "type": "Sim / Não + descrição" }
+      ]
+    },
+    {
+      "id": "block-6",
+      "number": 6,
+      "title": "Arquitetura, sistemas e integração",
+      "badge": "Arquitetura",
+      "domainBadge": "Architecture Readiness",
+      "objective": "Mapear sistemas core, nível de exposição via APIs e maturidade de integração para AI Flows.",
+      "questions": [
+        { "text": "Quais sistemas core sustentam os processos prioritários da empresa?", "type": "Texto livre" },
+        { "text": "Esses sistemas possuem APIs ou mecanismos de integração disponíveis?", "type": "Sim / Não / Parcial" },
+        { "text": "Existe API Management, iPaaS, barramento, mensageria ou event streaming na arquitetura atual?", "type": "Sim / Não / Parcial" },
+        { "text": "Quais sistemas precisariam ser acessados ou acionados por futuros agentes, assistentes ou automações de IA?", "type": "Texto livre" },
+        { "text": "A empresa possui arquitetura de referência, arquitetura corporativa ou arquitetura de solução documentada?", "type": "Sim / Não / Parcial" }
+      ]
+    },
+    {
+      "id": "block-7",
+      "number": 7,
+      "title": "Stacks e habilitadores tecnológicos",
+      "badge": "Stacks",
+      "domainBadge": "API & Integration",
+      "objective": "Entender quais plataformas, clouds e ferramentas já fazem parte do ecossistema.",
+      "questions": [
+        { "text": "A empresa utiliza Microsoft 365, Copilot, Power Platform, Azure ou Azure OpenAI?", "type": "Múltipla escolha" },
+        { "text": "A empresa utiliza Google Workspace, Gemini, Google Cloud, Vertex AI, BigQuery ou Apigee?", "type": "Múltipla escolha" },
+        { "text": "A empresa utiliza ServiceNow, Jira, Confluence, Salesforce, SAP, Oracle, TOTVS ou outras plataformas corporativas relevantes?", "type": "Múltipla escolha" },
+        { "text": "Existem ferramentas de observabilidade, segurança, IAM, SIEM, GRC ou monitoramento já adotadas?", "type": "Texto livre" }
+      ]
+    },
+    {
+      "id": "block-8",
+      "number": 8,
+      "title": "Governança, segurança, ROI e continuidade",
+      "badge": "Governança · ROI",
+      "domainBadge": "Governance & Risk",
+      "objective": "Entender quem decide, quais riscos não são aceitos, como o valor será medido e quem aprova continuidade.",
+      "questions": [
+        { "text": "Quem aprova o uso de IA e a continuidade de novas iniciativas na empresa?", "type": "Texto curto" },
+        { "text": "Que riscos a empresa não aceita correr com IA?", "type": "Texto livre" },
+        { "text": "Quais métricas provariam que uma iniciativa de IA gerou valor?", "type": "Texto livre" },
+        { "text": "Existe baseline de tempo, custo, volume, erro, retrabalho ou SLA dos processos candidatos?", "type": "Sim / Não / Parcial" },
+        { "text": "Quem aprovaria a continuidade para AI Sprints após a Inception?", "type": "Texto curto" },
+        { "text": "Há algum material que possa ser compartilhado para apoiar a preparação da Inception?", "type": "Sim / Não + descrição" }
+      ]
+    }
+  ]
+}

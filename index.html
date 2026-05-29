@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ENG Demo Center</title>
+  <meta name="description" content="Portfólio interativo de ofertas digitais, aceleradores e demos client-facing da ENG Brasil." />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+      background: #F4F5F7; color: #111827;
+      line-height: 1.6; -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── Hero ── */
+    .hero {
+      background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+      color: #FFF; padding: 64px 32px 56px; text-align: center;
+    }
+    .hero__eyebrow {
+      font-size: 0.68rem; font-weight: 600; text-transform: uppercase;
+      letter-spacing: 0.14em; color: #E6007E; margin-bottom: 14px;
+    }
+    .hero h1 {
+      font-size: 2.2rem; font-weight: 800; margin-bottom: 14px;
+      letter-spacing: -0.02em;
+    }
+    .hero__subtitle {
+      font-size: 1rem; color: rgba(255,255,255,0.72);
+      max-width: 700px; margin: 0 auto 12px; font-weight: 400;
+    }
+    .hero__support {
+      font-size: 0.82rem; color: rgba(255,255,255,0.42);
+      max-width: 620px; margin: 0 auto 40px;
+    }
+    .hero__pills {
+      display: flex; justify-content: center; gap: 12px; flex-wrap: wrap;
+    }
+    .hero__pill {
+      font-size: 0.68rem; font-weight: 600; text-transform: uppercase;
+      letter-spacing: 0.06em; padding: 6px 18px;
+      border-radius: 999px; border: 1px solid rgba(255,255,255,0.12);
+      color: rgba(255,255,255,0.6); background: rgba(255,255,255,0.04);
+    }
+
+    /* ── Container ── */
+    .container { max-width: 1200px; margin: 0 auto; padding: 48px 32px 32px; }
+
+    /* ── Sections ── */
+    .section-block { margin-bottom: 56px; }
+    .section-title {
+      font-size: 0.72rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.1em; color: #E6007E; margin-bottom: 5px;
+    }
+    .section-lead {
+      font-size: 0.82rem; color: #6B7280; margin-bottom: 24px;
+    }
+
+    /* ── Grids ── */
+    .grid { display: grid; gap: 20px; }
+    .grid--featured { grid-template-columns: 1fr; }
+    .grid--2 { grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); }
+
+    /* ── Card ── */
+    .card {
+      background: #FFF; border: 1px solid #E5E7EB;
+      border-radius: 10px; padding: 28px;
+      display: flex; flex-direction: column;
+      transition: box-shadow 0.18s ease, border-color 0.18s ease;
+    }
+    .card:hover {
+      border-color: #D1D5DB;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+    }
+
+    .card--featured {
+      flex-direction: row; gap: 28px; align-items: flex-start;
+      padding: 32px 36px;
+      border-left: 4px solid #E6007E;
+    }
+    .card--featured:hover { border-color: #E6007E; box-shadow: 0 8px 28px rgba(230,0,126,0.08); }
+    .card--featured .card__body { flex: 1; }
+    .card--featured .card__side {
+      flex-shrink: 0; display: flex; flex-direction: column;
+      align-items: flex-end; gap: 12px; min-width: 150px;
+    }
+
+    .card--adapt { border-left: 3px solid #00AEEF; }
+    .card--adapt:hover { border-color: #00AEEF; box-shadow: 0 6px 20px rgba(0,174,239,0.08); }
+
+    .card--new { border-left: 3px solid #8B5CF6; opacity: 0.82; }
+    .card--new:hover { border-color: #8B5CF6; box-shadow: 0 6px 20px rgba(139,92,246,0.08); }
+
+    .card--sector { border-left: 3px solid #F4B400; }
+    .card--sector:hover { border-color: #F4B400; box-shadow: 0 6px 20px rgba(244,180,0,0.1); }
+
+    /* ── Card internals ── */
+    .card__top {
+      display: flex; align-items: center; gap: 10px;
+      margin-bottom: 12px; flex-wrap: wrap;
+    }
+
+    .status {
+      display: inline-flex; align-items: center; gap: 5px;
+      font-size: 0.62rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.06em; padding: 3px 12px; border-radius: 999px;
+    }
+    .status__dot { width: 7px; height: 7px; border-radius: 50%; }
+    .status--ready {
+      background: rgba(230,0,126,0.08); color: #9B0054;
+      border: 1px solid rgba(230,0,126,0.2);
+    }
+    .status--ready .status__dot { background: #E6007E; }
+    .status--adapt {
+      background: rgba(0,174,239,0.08); color: #0C4A6E;
+      border: 1px solid rgba(0,174,239,0.2);
+    }
+    .status--adapt .status__dot { background: #00AEEF; }
+    .status--new {
+      background: rgba(139,92,246,0.08); color: #5B21B6;
+      border: 1px solid rgba(139,92,246,0.2);
+    }
+    .status--new .status__dot { background: #8B5CF6; }
+    .status--sector {
+      background: rgba(244,180,0,0.10); color: #78350F;
+      border: 1px solid rgba(244,180,0,0.25);
+    }
+    .status--sector .status__dot { background: #F4B400; }
+
+    .card__name {
+      font-size: 1.15rem; font-weight: 700; color: #111827;
+      margin-bottom: 6px;
+    }
+    .card--featured .card__name { font-size: 1.3rem; }
+
+    .card__desc {
+      font-size: 0.8rem; color: #6B7280; margin-bottom: 14px;
+      line-height: 1.6;
+    }
+
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+    .tag {
+      font-size: 0.58rem; font-weight: 600; text-transform: uppercase;
+      letter-spacing: 0.04em; padding: 2px 10px;
+      border-radius: 999px; border: 1px solid #E5E7EB;
+      color: #6B7280; background: #FAFAFA;
+    }
+
+    .card__actions { margin-top: auto; display: flex; gap: 10px; flex-wrap: wrap; }
+
+    .btn {
+      display: inline-block; font-size: 0.76rem; font-weight: 600;
+      padding: 8px 24px; border-radius: 8px;
+      text-decoration: none; text-align: center;
+      transition: background 0.15s ease, color 0.15s ease, box-shadow 0.15s ease;
+      border: none; cursor: pointer;
+    }
+    .btn--primary { background: #E6007E; color: #FFF; }
+    .btn--primary:hover {
+      background: #C70068;
+      box-shadow: 0 4px 12px rgba(230,0,126,0.2);
+    }
+    .btn--ghost {
+      background: transparent; color: #9CA3AF;
+      border: 1px solid #E5E7EB;
+      cursor: default; pointer-events: none;
+    }
+
+    /* ── Footer ── */
+    .footer {
+      border-top: 1px solid #E5E7EB;
+      padding: 32px;
+    }
+    .footer__inner {
+      max-width: 1200px; margin: 0 auto;
+      display: flex; flex-wrap: wrap; gap: 32px;
+      justify-content: space-between; align-items: flex-start;
+    }
+    .footer__col { min-width: 200px; }
+    .footer__col-title {
+      font-size: 0.62rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.08em; color: #9CA3AF; margin-bottom: 8px;
+    }
+    .footer__col p {
+      font-size: 0.72rem; color: #6B7280; line-height: 1.8;
+    }
+    .footer__copy {
+      width: 100%; text-align: center;
+      font-size: 0.66rem; color: #9CA3AF;
+      padding-top: 20px; border-top: 1px solid #F3F4F6;
+      margin-top: 8px;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 860px) {
+      .card--featured { flex-direction: column; }
+      .card--featured .card__side {
+        align-items: flex-start; min-width: unset;
+        flex-direction: row; flex-wrap: wrap;
+      }
+    }
+    @media (max-width: 768px) {
+      .hero { padding: 44px 20px 40px; }
+      .hero h1 { font-size: 1.6rem; }
+      .container { padding: 28px 16px; }
+      .grid--2 { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 480px) {
+      .footer__inner { flex-direction: column; gap: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── Hero ── -->
+  <header class="hero">
+    <p class="hero__eyebrow">ENG Brasil</p>
+    <h1>ENG Demo Center</h1>
+    <p class="hero__subtitle">
+      Portfólio interativo de ofertas digitais, aceleradores e demos client-facing da ENG Brasil.
+    </p>
+    <p class="hero__support">
+      Explore experiências demonstráveis que conectam estratégia, tecnologia e valor de negócio.
+    </p>
+    <div class="hero__pills">
+      <span class="hero__pill">Demos disponíveis</span>
+      <span class="hero__pill">Ofertas em adequação</span>
+      <span class="hero__pill">Cross-industry</span>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <!-- ══ 1. Demos disponíveis ══ -->
+    <div class="section-block">
+      <p class="section-title">Demos disponíveis</p>
+      <p class="section-lead">Experiências interativas prontas para apresentação executiva e validação com clientes.</p>
+
+      <div class="grid grid--featured">
+        <article class="card card--featured">
+          <div class="card__body">
+            <div class="card__top">
+              <span class="status status--ready"><span class="status__dot"></span>Disponível</span>
+            </div>
+            <h2 class="card__name">AI Strategic Inception</h2>
+            <p class="card__desc">
+              Demo executiva para diagnóstico de maturidade, arquitetura alvo, backlog de AI Flows, roadmap, value case e dashboard de métricas.
+            </p>
+            <div class="tags">
+              <span class="tag">IA</span>
+              <span class="tag">Estratégia</span>
+              <span class="tag">Eficiência</span>
+              <span class="tag">Cross-industry</span>
+            </div>
+          </div>
+          <div class="card__side">
+            <a class="btn btn--primary" href="./ai_strategic_inception/">Abrir demo</a>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- ══ 2. Ofertas em adequação ══ -->
+    <div class="section-block">
+      <p class="section-title">Ofertas em adequação</p>
+      <p class="section-lead">Ofertas sendo preparadas e validadas para o portfólio do ENG Demo Center.</p>
+
+      <div class="grid grid--2">
+        <article class="card card--adapt">
+          <div class="card__top">
+            <span class="status status--adapt"><span class="status__dot"></span>Em adequação ao template</span>
+          </div>
+          <h2 class="card__name">AORI Padrão</h2>
+          <p class="card__desc">Orquestração inteligente de demandas, chamados e tickets com agentes de IA.</p>
+          <div class="tags">
+            <span class="tag">IA</span>
+            <span class="tag">Atendimento</span>
+            <span class="tag">Operação</span>
+            <span class="tag">Cross-industry</span>
+          </div>
+          <div class="card__actions">
+            <span class="btn btn--ghost">Em breve</span>
+          </div>
+        </article>
+
+        <article class="card card--adapt">
+          <div class="card__top">
+            <span class="status status--adapt"><span class="status__dot"></span>Em adequação ao template</span>
+          </div>
+          <h2 class="card__name">AI Gateway</h2>
+          <p class="card__desc">Governança, roteamento, segurança e observabilidade para LLMs e agentes em produção.</p>
+          <div class="tags">
+            <span class="tag">IA</span>
+            <span class="tag">Governança</span>
+            <span class="tag">Agentes</span>
+            <span class="tag">MCP</span>
+          </div>
+          <div class="card__actions">
+            <span class="btn btn--ghost">Em breve</span>
+          </div>
+        </article>
+
+        <article class="card card--adapt">
+          <div class="card__top">
+            <span class="status status--adapt"><span class="status__dot"></span>Em adequação ao template</span>
+          </div>
+          <h2 class="card__name">Fast Data for AI</h2>
+          <p class="card__desc">Dados rápidos, confiáveis e de baixa latência para alimentar agentes, RAGs e operações com IA.</p>
+          <div class="tags">
+            <span class="tag">Dados</span>
+            <span class="tag">IA</span>
+            <span class="tag">Real-time</span>
+            <span class="tag">Arquitetura</span>
+          </div>
+          <div class="card__actions">
+            <span class="btn btn--ghost">Em breve</span>
+          </div>
+        </article>
+
+        <article class="card card--new">
+          <div class="card__top">
+            <span class="status status--new"><span class="status__dot"></span>Em construção</span>
+          </div>
+          <h2 class="card__name">Agentic Vision</h2>
+          <p class="card__desc">Visão computacional e automação visual com agentes para inspeção, monitoramento e operações.</p>
+          <div class="tags">
+            <span class="tag">IA</span>
+            <span class="tag">Visão Computacional</span>
+            <span class="tag">Operações</span>
+            <span class="tag">Indústria</span>
+          </div>
+          <div class="card__actions">
+            <span class="btn btn--ghost">Em breve</span>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- ══ 3. Demos por mercado ══ -->
+    <div class="section-block">
+      <p class="section-title">Demos por mercado</p>
+      <p class="section-lead">Adaptações setoriais de ofertas para contextos específicos de mercado.</p>
+
+      <div class="grid grid--2">
+        <article class="card card--sector">
+          <div class="card__top">
+            <span class="status status--sector"><span class="status__dot"></span>Demo setorial em validação</span>
+          </div>
+          <h2 class="card__name">AORI Energia e Utilities</h2>
+          <p class="card__desc">Adaptação da oferta AORI para o mercado de Energia e Utilities, com cenários e agentes especializados para o setor.</p>
+          <div class="tags">
+            <span class="tag">Energia</span>
+            <span class="tag">Utilities</span>
+            <span class="tag">Atendimento</span>
+            <span class="tag">Operação</span>
+          </div>
+          <div class="card__actions">
+            <span class="btn btn--ghost">Em validação</span>
+          </div>
+        </article>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__col">
+        <p class="footer__col-title">ENG Demo Center</p>
+        <p>Portfólio interativo de ofertas digitais da ENG Brasil.</p>
+        <p>Dados fictícios para fins demonstrativos.</p>
+      </div>
+      <div class="footer__col">
+        <p class="footer__col-title">Sobre</p>
+        <p>Experiências demonstráveis que conectam estratégia, tecnologia e valor de negócio.</p>
+        <p>Todas as demos utilizam dados simulados.</p>
+      </div>
+      <p class="footer__copy">ENG Demo Center · Engineering do Brasil</p>
+    </div>
+  </footer>
+
+</body>
+</html>

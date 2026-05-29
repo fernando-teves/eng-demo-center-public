@@ -1,0 +1,209 @@
+[
+  {
+    "id": "flow-001",
+    "name": "Atendimento Inteligente",
+    "area": "Atendimento e Operações",
+    "pain": "Alto volume de chamados repetitivos, baixa velocidade de primeira resposta e inconsistência na resolução assistida.",
+    "valueHypothesis": "Melhorar tempo de primeira resposta, aumentar parcela resolvida com apoio de agentes e reduzir esforço operacional recorrente, com governança explícita.",
+    "agents": [
+      "Agente de triagem contextual",
+      "Agente de resposta assistida com RAG corporativo",
+      "Agente de roteamento e priorização operacional",
+      "Agente de curadoria de conhecimento"
+    ],
+    "mappedFlows": [
+      "Abertura do chamado",
+      "Classificação e política",
+      "Busca em base de conhecimento",
+      "Resposta assistida e revisão humana",
+      "Escalonamento",
+      "Encerramento",
+      "Análise de qualidade assistida"
+    ],
+    "integrations": [
+      "ServiceNow ou equivalente de chamados",
+      "CRM",
+      "Teams",
+      "SharePoint ou repositório de conhecimento",
+      "Gateway de APIs",
+      "Lake analítico de histórico"
+    ],
+    "governedData": [
+      "Histórico de chamados",
+      "Base de artigos e FAQs",
+      "SLAs departamentais",
+      "Perfis de acesso ao conhecimento"
+    ],
+    "architecture": [
+      "Camada de experiência multicanal",
+      "Agentes com RAG federado por domínios",
+      "AI Gateway e políticas de consumo",
+      "Observabilidade de decisões de agentes",
+      "Camada humana obrigatória em temas regulatórios"
+    ],
+    "decision": "Avançar",
+    "estimatedROI": "Priorizado no cenário consolidado (~R$ 1,2M no subconjunto priorizado)",
+    "readiness": "Médio",
+    "risk": "Médio",
+    "effort": "Médio"
+  },
+  {
+    "id": "flow-002",
+    "name": "Conhecimento Corporativo Governado",
+    "area": "Tecnologia e Backoffice Corporativo",
+    "pain": "Documentos dispersos, versões inconsistentes e baixa confiança quando colaboradores consomem respostas baseadas em conhecimento interno.",
+    "valueHypothesis": "Centralizar ingestão semântica, curadoria e versionamento dos conteúdos críticos, melhorando acurácia das respostas assistidas pela IA nos demais fluxos corporativos.",
+    "agents": [
+      "Agente de ingestão estruturada",
+      "Agente classificador de sensibilidade e domínios",
+      "Agente sintetizador com citações de fontes"
+    ],
+    "mappedFlows": [
+      "Ingestão automatizada ou assistida",
+      "Classificação e rotulagem de sensibilidade",
+      "Consulta contextual com trilhas de fonte",
+      "Reprocessamento periódico de conteúdo obsoleto"
+    ],
+    "integrations": [
+      "SharePoint e repositório de arquivo",
+      "Gestão eletrônica de documentos",
+      "Teams",
+      "Ferramenta de catalogação corporativa",
+      "API Gateway"
+    ],
+    "governedData": [
+      "Contratos modelo",
+      "Políticas internas atualizadas",
+      "Fluxos organizacionais aprovados",
+      "FAQ críticas de compliance"
+    ],
+    "architecture": [
+      "RAG multitenant corporativo",
+      "Catálogo de dados e lineage resumidos",
+      "Políticas de retenção e máscaras",
+      "Observabilidade de consultas"
+    ],
+    "decision": "Preparar fundação",
+    "estimatedROI": "Materializa valor indireto para outros AI Flows; premissas a refinar quando o catálogo estiver estruturado",
+    "readiness": "Baixo–médio",
+    "risk": "Alto",
+    "effort": "Alto"
+  },
+  {
+    "id": "flow-003",
+    "name": "Triagem Inteligente de Documentos",
+    "area": "Backoffice Corporativo",
+    "pain": "Leitura manual intensiva para classificar e rotear volumetria média-alta de documentos operacionais, com alto retrabalho.",
+    "valueHypothesis": "Reduzir esforço manual com triagem automatizada sob revisão quando houver divergências e melhorar rastreabilidade dos status para stakeholders.",
+    "agents": [
+      "Agente de extração contextual",
+      "Agente comparador contra regras de negócio",
+      "Agente de distribuição de tarefas"
+    ],
+    "mappedFlows": [
+      "Captura inicial",
+      "Classificação de tipo e urgência assistida",
+      "Validação assistida pela equipe de negócio",
+      "Roteamento e arquivamento com metadados"
+    ],
+    "integrations": [
+      "Scanner de entrada",
+      "Workflow legado BPM",
+      "SharePoint ou GED",
+      "API de legado RH/Financeiros"
+    ],
+    "governedData": [
+      "Layouts de formulários",
+      "Tabelas de referência mestre-contratos",
+      "Logs de tratamento LGPD sintéticos nos conjuntos mascarados"
+    ],
+    "architecture": [
+      "Pipeline de OCR + LLM especializado por domínio",
+      "Fila revisão humana com métricas de assertividade",
+      "Armazenamento seguro segregado por perfil",
+      "Trilhas de auditoria automatizadas"
+    ],
+    "decision": "Ajustar",
+    "estimatedROI": "Sensível ao volume real processado mensalmente; cenário atual indica retrabalho ainda elevado até estabilização dos layouts",
+    "readiness": "Médio",
+    "risk": "Médio",
+    "effort": "Médio"
+  },
+  {
+    "id": "flow-004",
+    "name": "Operação Assistida por Agentes",
+    "area": "Operações Corporativas (NOC e Field correlatos)",
+    "pain": "Diagnósticos demorados, dependência excessiva de especialistas pontuais e priorização inconsistente quando eventos simultâneos ocorrem.",
+    "valueHypothesis": "Acelerar detecção, priorização contextual e playbook assistido mantendo comando humano e registro obrigatório de decisões críticas.",
+    "agents": [
+      "Agente correlacionador de eventos",
+      "Agente de sugestão de playbook",
+      "Agente de sumarização de incidentes para stakeholders"
+    ],
+    "mappedFlows": [
+      "Detecção inicial",
+      "Correlação automatizada supervisionada",
+      "Sugestões de playbook e automação pontualmente segura",
+      "Encaminhamento e post-mortem estruturado"
+    ],
+    "integrations": [
+      "Soluções de monitoramento atual",
+      "CMDB parcial mascarado",
+      "Messenger corporativo crítico",
+      "Gateways de comandos automatizados com janelas de ação predefinidas"
+    ],
+    "governedData": [
+      "Histórico de incidentes tratados mascarado",
+      "SLAs multidisciplinares",
+      "Base de playbook aprovados"
+    ],
+    "architecture": [
+      "Orquestração modular de prompts com limites definidos por domínios",
+      "Observabilidade em tempo real de consumo pelos agentes",
+      "Padrões de segregação forte para automações diretas"
+    ],
+    "decision": "Preparar fundação",
+    "estimatedROI": "Elevado médio-prazo assim que integrações de telemetria estevel e CMDB atualizado continuamente",
+    "readiness": "Baixo–médio",
+    "risk": "Alto",
+    "effort": "Alto"
+  },
+  {
+    "id": "flow-005",
+    "name": "Modernização Assistida",
+    "area": "TI e Negócio Digital",
+    "pain": "Legados encapsulados dificultam exposição estável por APIs consistentes para consumidores incluindo camadas cognitivas.",
+    "valueHypothesis": "Acelerar levantamento técnico, identificação de superfícies seguras para exposição incremental e reuso gradual em AI Flows correlatos.",
+    "agents": [
+      "Agente de leitura assistida de legado mascarado",
+      "Agente de rascunho de contratos modernos entre serviços",
+      "Agente de suporte a migrações incrementais guiadas por risco"
+    ],
+    "mappedFlows": [
+      "Descoberta de dependências automatizada inicial",
+      "Proposta assistida para fatias de encapsulamento por domínios",
+      "Revalidação técnico-funcional com squads especializados",
+      "Publicação controlada atrás de gateways"
+    ],
+    "integrations": [
+      "Gerenciadores de código interno",
+      "Repositório de backlog corporativo mascarado",
+      "Gateways de APIs existentes ou planejados"
+    ],
+    "governedData": [
+      "Mapas técnicos abstratos mascarados",
+      "Lista de dados sensíveis por serviços",
+      "Registro de decisões arquiteturais"
+    ],
+    "architecture": [
+      "Estrato de adapters progressivos atrás dos gateways corporativos",
+      "Contratos declarativos de consumo IA",
+      "Observabilidade de consumo sintético"
+    ],
+    "decision": "Avançar",
+    "estimatedROI": "Habilitação transversal aos demais fluxos dentro do pacote estratégico simulado",
+    "readiness": "Médio",
+    "risk": "Médio-alto",
+    "effort": "Médio-alto"
+  }
+]

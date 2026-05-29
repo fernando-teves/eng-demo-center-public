@@ -1,0 +1,289 @@
+{
+  "eyebrow": "OUTPUT 5 · ROADMAP E VALUE CASE",
+  "headline": "Roadmap conecta AI Flows, dependências e valor esperado",
+  "lead": "A página organiza a sequência recomendada de evolução, conectando ondas de adoção de IA, capacidades habilitadoras, premissas, métricas e faixa demonstrativa de valor.",
+  "disclaimer": "Dados fictícios para fins demonstrativos",
+
+  "horizonsTitle": "Sequência recomendada de evolução",
+  "horizonsLead": "O roadmap organiza quais AI Flows avançam primeiro, quais dependem de fundação e quais precisam de ajuste antes da execução.",
+  "horizonsInsight": "Cada horizonte combina AI Flows com diferentes níveis de prontidão, dependências e valor esperado, evitando que ondas de IA avancem sem fundação mínima.",
+  "horizons": [
+    {
+      "label": "Horizonte 1",
+      "period": "0 a 4 semanas",
+      "focus": "Inception e AI Sprint inicial",
+      "flows": ["Atendimento Inteligente", "Modernização Assistida"],
+      "objective": "Validar ondas de maior prontidão e preparar métricas de valor.",
+      "dependency": "APIs de atendimento, repositórios e critérios de sucesso.",
+      "decisions": ["Avançar", "Avançar"]
+    },
+    {
+      "label": "Horizonte 2",
+      "period": "1 a 3 meses",
+      "focus": "Fundação e escala controlada",
+      "flows": ["Conhecimento Corporativo Governado", "Triagem Inteligente de Documentos"],
+      "objective": "Governar conhecimento, dados, acessos e dependências críticas.",
+      "dependency": "Curadoria, owners de conteúdo, classificação e regras de negócio.",
+      "decisions": ["Preparar fundação", "Ajustar escopo"]
+    },
+    {
+      "label": "Horizonte 3",
+      "period": "3 a 5 meses",
+      "focus": "Evolução e operação assistida",
+      "flows": ["Operação Assistida por Agentes"],
+      "objective": "Escalar uso com maior governança, observabilidade e operação contínua.",
+      "dependency": "CMDB, monitoração, playbooks e limites de automação.",
+      "decisions": ["Preparar fundação"]
+    }
+  ],
+
+  "wavesTitle": "Como as ondas acumulam capacidades reutilizáveis",
+  "wavesLead": "Cada AI Flow entrega valor em uma frente e deixa capacidades corporativas reutilizáveis para as ondas seguintes.",
+  "wavesInsight": "As capacidades acumuladas reduzem fricção para novas ondas, desde que dependências de dados, APIs, governança e operação sejam tratadas no ritmo correto.",
+  "waveConnectors": [
+    "Conhecimento aplicado ao atendimento começa a orientar exposição de capacidades.",
+    "APIs, inventário e contratos ajudam a organizar conhecimento corporativo reutilizável.",
+    "Conhecimento governado melhora classificação, triagem e rastreabilidade documental.",
+    "Dados, logs e governança fortalecem operação assistida por agentes."
+  ],
+  "waves": [
+    {
+      "name": "Atendimento Inteligente",
+      "decision": "Avançar",
+      "capabilities": [
+        "Base de conhecimento aplicada",
+        "Agentes de triagem e resposta",
+        "Métricas de SLA"
+      ],
+      "dependencies": [
+        "APIs de atendimento",
+        "Service Desk",
+        "Política de autonomia"
+      ],
+      "unlocked": "Conhecimento aplicado ao atendimento orienta novas exposições de capacidades.",
+      "execDecision": "Entrar em AI Sprint inicial."
+    },
+    {
+      "name": "Modernização Assistida",
+      "decision": "Avançar",
+      "capabilities": [
+        "Inventário técnico",
+        "APIs candidatas",
+        "Contratos de serviço"
+      ],
+      "dependencies": [
+        "Repositórios",
+        "Documentação técnica",
+        "Gateways corporativos"
+      ],
+      "unlocked": "APIs, inventário e contratos ajudam a organizar conhecimento reutilizável.",
+      "execDecision": "Avançar em paralelo com controle técnico."
+    },
+    {
+      "name": "Conhecimento Corporativo Governado",
+      "decision": "Preparar fundação",
+      "capabilities": [
+        "RAG corporativo",
+        "Conteúdo com fonte",
+        "Curadoria e classificação"
+      ],
+      "dependencies": [
+        "Owners de conteúdo",
+        "Política de retenção",
+        "Critérios de atualização"
+      ],
+      "unlocked": "Conhecimento governado melhora classificação, triagem e rastreabilidade.",
+      "execDecision": "Preparar fundação antes da escala."
+    },
+    {
+      "name": "Triagem Inteligente de Documentos",
+      "decision": "Ajustar escopo",
+      "capabilities": [
+        "Pipeline OCR + LLM",
+        "Revisão humana",
+        "Logs de decisão"
+      ],
+      "dependencies": [
+        "Layouts documentais",
+        "Regras de negócio",
+        "Classificação LGPD"
+      ],
+      "unlocked": "Dados, logs e governança fortalecem operação assistida.",
+      "execDecision": "Refinar escopo e premissas."
+    },
+    {
+      "name": "Operação Assistida por Agentes",
+      "decision": "Preparar fundação",
+      "capabilities": [
+        "Playbooks assistidos",
+        "Observabilidade operacional",
+        "Limites de automação"
+      ],
+      "dependencies": [
+        "CMDB",
+        "Ferramentas de monitoração",
+        "Aprovação humana"
+      ],
+      "unlocked": "Operação assistida com governança e observabilidade contínua.",
+      "execDecision": "Preparar base operacional."
+    }
+  ],
+
+  "valueCaseTitle": "Value Case demonstrativo por AI Flow",
+  "valueCaseLead": "A estimativa demonstra como cada onda pode contribuir para valor, considerando esforço, prontidão, risco e capacidade de mensuração.",
+  "valueCaseDisclaimer": "Valores demonstrativos. Baselines e metas devem ser recalibrados com dados reais durante a Inception e AI Sprints.",
+  "valueCases": [
+    {
+      "name": "Atendimento Inteligente",
+      "expectedValue": "Alto",
+      "lever": "Redução de esforço, melhoria de SLA e aumento de resolutividade assistida.",
+      "horizon": "0 a 4 semanas",
+      "premises": "Base de conhecimento mínima, APIs de atendimento e fallback humano.",
+      "decision": "Avançar",
+      "demoMetrics": [
+        { "label": "Tempo de primeira resposta", "baseline": "18 min", "target": "7 min" },
+        { "label": "Taxa de resolução assistida", "baseline": "22%", "target": "45%" },
+        { "label": "Retrabalho em chamados repetitivos", "baseline": "28%", "target": "15%" }
+      ]
+    },
+    {
+      "name": "Modernização Assistida",
+      "expectedValue": "Médio-alto",
+      "lever": "Aceleração de leitura técnica, exposição incremental de capacidades e redução de fricção com legados.",
+      "horizon": "0 a 4 semanas",
+      "premises": "Repositórios acessíveis, documentação técnica, gateways e contratos de APIs.",
+      "decision": "Avançar",
+      "demoMetrics": [
+        { "label": "Tempo de análise de legado", "baseline": "10 dias", "target": "4 dias" },
+        { "label": "Dependências técnicas mapeadas", "baseline": "40%", "target": "85%" },
+        { "label": "APIs candidatas à exposição", "baseline": "3", "target": "12" }
+      ]
+    },
+    {
+      "name": "Conhecimento Corporativo Governado",
+      "expectedValue": "Alto indireto",
+      "lever": "Melhoria de acurácia, redução de retrabalho e base reutilizável para múltiplos AI Flows.",
+      "horizon": "1 a 3 meses",
+      "premises": "Owners de conteúdo, curadoria, classificação e política de retenção.",
+      "decision": "Preparar fundação",
+      "demoMetrics": [
+        { "label": "Respostas com fonte confiável", "baseline": "35%", "target": "80%" },
+        { "label": "Cobertura da base de conhecimento", "baseline": "45%", "target": "75%" },
+        { "label": "Reutilização por AI Flows", "baseline": "1 fluxo", "target": "3 fluxos" }
+      ]
+    },
+    {
+      "name": "Triagem Inteligente de Documentos",
+      "expectedValue": "Médio",
+      "lever": "Redução de leitura manual, classificação e roteamento de documentos.",
+      "horizon": "1 a 3 meses",
+      "premises": "Layouts estáveis, regras de negócio, classificação LGPD e revisão humana.",
+      "decision": "Ajustar escopo",
+      "demoMetrics": [
+        { "label": "Tempo médio de triagem", "baseline": "12 min", "target": "4 min" },
+        { "label": "Taxa de acerto na classificação", "baseline": "68%", "target": "88%" },
+        { "label": "Retrabalho documental", "baseline": "25%", "target": "12%" }
+      ]
+    },
+    {
+      "name": "Operação Assistida por Agentes",
+      "expectedValue": "Alto potencial",
+      "lever": "Redução de tempo de diagnóstico, priorização contextual e suporte a playbooks.",
+      "horizon": "3 a 5 meses",
+      "premises": "CMDB, monitoramento, playbooks aprovados, limites de automação.",
+      "decision": "Preparar fundação",
+      "demoMetrics": [
+        { "label": "Tempo de diagnóstico", "baseline": "45 min", "target": "20 min" },
+        { "label": "Uso de playbooks aprovados", "baseline": "30%", "target": "70%" },
+        { "label": "Incidentes recorrentes", "baseline": "18/mês", "target": "10/mês" }
+      ]
+    }
+  ],
+
+  "premisesTitle": "Premissas que condicionam captura de valor",
+  "premisesLead": "O valor esperado depende da disponibilidade de dados, APIs, governança, adoção operacional e capacidade de mensuração.",
+  "premiseGroups": [
+    {
+      "label": "Dados e conhecimento",
+      "items": [
+        "Curadoria mínima",
+        "Classificação de sensibilidade",
+        "Owners definidos",
+        "Qualidade de base"
+      ]
+    },
+    {
+      "label": "APIs e arquitetura",
+      "items": [
+        "APIs críticas disponíveis",
+        "Gateways e conectores",
+        "Observabilidade",
+        "Integração com sistemas corporativos"
+      ]
+    },
+    {
+      "label": "Governança e segurança",
+      "items": [
+        "AI Gateway e guardrails",
+        "Fallback humano",
+        "Logs e auditoria",
+        "Política de autonomia"
+      ]
+    },
+    {
+      "label": "Adoção e métricas",
+      "items": [
+        "Sponsor definido",
+        "Baseline",
+        "Indicadores de valor",
+        "Processo de acompanhamento"
+      ]
+    }
+  ],
+
+  "indicatorsTitle": "Faixa demonstrativa de valor e esforço",
+  "indicatorsLead": "A leitura abaixo é ilustrativa e deve ser recalibrada com dados reais do cliente durante a Inception e AI Sprints.",
+  "indicators": [
+    {
+      "label": "ROI potencial priorizado",
+      "value": "R$ 1,2M",
+      "note": "Subconjunto priorizado sobre o período analisado."
+    },
+    {
+      "label": "Payback estimado",
+      "value": "3 a 5 meses",
+      "note": "Sob premissas de adoção interna e escopo definido."
+    },
+    {
+      "label": "Redução de esforço estimada",
+      "value": "20% a 35%",
+      "note": "Faixa combinada sobre processos alvo quando os fluxos estiverem estáveis."
+    },
+    {
+      "label": "AI Flows com avanço imediato",
+      "value": "2",
+      "note": "Ondas com melhor combinação entre valor e prontidão."
+    },
+    {
+      "label": "AI Flows que exigem fundação",
+      "value": "2",
+      "note": "Dependências claras em dados, integração ou governança."
+    },
+    {
+      "label": "AI Flow em ajuste de escopo",
+      "value": "1",
+      "note": "Hipótese com valor potencial, mas premissas ainda abertas."
+    }
+  ],
+
+  "closingTitle": "O que o Roadmap & Value Case ajuda a decidir",
+  "closingLead": "O Roadmap & Value Case conecta sequência, valor, dependências e métricas para orientar quais AI Flows avançam primeiro, quais exigem fundação e quais premissas precisam ser validadas antes da escala.",
+  "closingBullets": [
+    "Qual sequência de AI Flows maximiza valor e reduz risco.",
+    "Quais dependências precisam ser tratadas antes da execução.",
+    "Quais métricas serão usadas para validar valor.",
+    "Quais premissas sustentam o value case.",
+    "Quais ondas devem avançar para AI Sprint ou preparação de fundação."
+  ],
+  "closingMicrocopy": "AI Flow é uma onda de desenvolvimento e adoção de IA, não um componente técnico."
+}

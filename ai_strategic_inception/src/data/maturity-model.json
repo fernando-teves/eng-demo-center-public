@@ -1,0 +1,125 @@
+{
+  "scaleMin": 0,
+  "scaleMax": 5,
+  "summary": "Readiness distribuída entre 7 domínios: dados e arquitetura em patamar intermediário; governança, cultura e ROI como principais frentes a reforço antes da escala.",
+  "overallAverage": 2.29,
+  "dimensions": [
+    { "key": "aiMaturity", "label": "AI Maturity", "shortLabel": "AI", "score": 2.1, "target": 3.5 },
+    { "key": "aiCultureAdoption", "label": "AI Culture & Adoption", "shortLabel": "Cultura", "score": 2.0, "target": 3.5 },
+    { "key": "dataReadiness", "label": "Data Readiness", "shortLabel": "Dados", "score": 2.8, "target": 3.8 },
+    { "key": "apiIntegration", "label": "API & Integration", "shortLabel": "APIs", "score": 2.4, "target": 3.6 },
+    { "key": "architectureReadiness", "label": "Architecture Readiness", "shortLabel": "Arquitetura", "score": 2.6, "target": 3.7 },
+    { "key": "governanceRisk", "label": "Governance & Risk", "shortLabel": "Governança", "score": 1.9, "target": 3.5 },
+    { "key": "roiReadiness", "label": "ROI Readiness", "shortLabel": "ROI", "score": 2.2, "target": 3.4 }
+  ],
+  "criticalRisks": [
+    {
+      "title": "Governança e risco abaixo do patamar recomendado",
+      "detail": "Políticas, classificação de dados sensíveis e trilhas de auditoria para agentes ainda precisam ser consolidadas antes de uso ampliado.",
+      "severity": "alto"
+    },
+    {
+      "title": "Cultura e adoção de IA desigual entre áreas",
+      "detail": "Letramento em IA, preparo das equipes e confiança no uso de agentes e copilots variam significativamente entre áreas, limitando adoção e escala.",
+      "severity": "alto"
+    },
+    {
+      "title": "Fragmentação de conhecimento e dados",
+      "detail": "Bases heterogêneas e lacunas de qualidade elevam retrabalho e impactam confiança das respostas assistidas pelos agentes.",
+      "severity": "médio"
+    },
+    {
+      "title": "Integrações com legado",
+      "detail": "Exposição inconsistente via APIs aumenta tempo de ciclo das ondas de valor que dependem de dados operacionais em tempo quase real.",
+      "severity": "médio"
+    }
+  ],
+  "scaleDescriptions": [
+    { "level": 1, "name": "Inicial", "description": "Práticas ad hoc, sem padrão definido. Dependência de iniciativas individuais." },
+    { "level": 2, "name": "Emergente", "description": "Primeiras iniciativas estruturadas, mas sem governança ou escala. Experimentação em curso." },
+    { "level": 3, "name": "Estruturado", "description": "Processos documentados, padrões definidos e governança em formação. Execução recorrente." },
+    { "level": 4, "name": "Gerenciado", "description": "Métricas ativas, governança operacional e melhoria contínua. Decisão baseada em evidências." },
+    { "level": 5, "name": "Otimizado", "description": "Evolução contínua, escala controlada e integração estratégica. Referência de mercado." }
+  ],
+  "domainScaleOverrides": {
+    "aiCultureAdoption": [
+      { "level": 1, "name": "Inicial", "description": "Baixa familiaridade com IA e uso pontual sem orientação." },
+      { "level": 2, "name": "Emergente", "description": "Uso informal ou setorial, com baixa padronização e letramento desigual." },
+      { "level": 3, "name": "Estruturado", "description": "Trilhas iniciais de capacitação, papéis definidos e adoção em áreas priorizadas." },
+      { "level": 4, "name": "Gerenciado", "description": "Cultura de uso assistido por IA, governança ativa e adoção mensurada." },
+      { "level": 5, "name": "Otimizado", "description": "Modelo cognitivo incorporado à operação, com melhoria contínua e ampla confiança organizacional." }
+    ]
+  },
+  "gapMap": [
+    {
+      "key": "aiMaturity",
+      "label": "AI Maturity",
+      "score": 2.1,
+      "target": 3.5,
+      "reading": "Uso disperso e governança inicial.",
+      "gaps": ["Shadow AI", "Ausência de política corporativa", "Baixa rastreabilidade"],
+      "aiFlowImpact": "Risco de escala descontrolada dos AI Flows.",
+      "decision": "Preparar governança mínima"
+    },
+    {
+      "key": "aiCultureAdoption",
+      "label": "AI Culture & Adoption",
+      "score": 2.0,
+      "target": 3.5,
+      "reading": "Letramento desigual e baixa padronização de uso.",
+      "gaps": ["Letramento desigual", "Ausência de trilhas de capacitação", "Baixa confiança organizacional", "Papéis indefinidos"],
+      "aiFlowImpact": "Limita adoção, escala e sustentação dos AI Flows por resistência ou desconhecimento.",
+      "decision": "Preparar fundação"
+    },
+    {
+      "key": "dataReadiness",
+      "label": "Data Readiness",
+      "score": 2.8,
+      "target": 3.8,
+      "reading": "Dados existem, mas com baixa padronização.",
+      "gaps": ["Qualidade", "Catálogo", "Acesso e linhagem"],
+      "aiFlowImpact": "AI Flows dependem de curadoria e priorização de fontes.",
+      "decision": "Avançar com restrições"
+    },
+    {
+      "key": "apiIntegration",
+      "label": "API & Integration",
+      "score": 2.4,
+      "target": 3.6,
+      "reading": "Integrações parciais e baixa gestão unificada.",
+      "gaps": ["APIs críticas sem catálogo", "Conectores dispersos", "Baixa observabilidade"],
+      "aiFlowImpact": "Agentes podem ter baixo alcance operacional.",
+      "decision": "Preparar integração"
+    },
+    {
+      "key": "architectureReadiness",
+      "label": "Architecture Readiness",
+      "score": 2.6,
+      "target": 3.7,
+      "reading": "Arquitetura parcialmente preparada.",
+      "gaps": ["Ausência de AI Gateway", "Baixa observabilidade de agentes", "Padrões incompletos"],
+      "aiFlowImpact": "Risco operacional ao avançar para produção.",
+      "decision": "Adequar camada de controle"
+    },
+    {
+      "key": "governanceRisk",
+      "label": "Governance & Risk",
+      "score": 1.9,
+      "target": 3.5,
+      "reading": "Governança abaixo do recomendado para escala.",
+      "gaps": ["Auditoria", "LGPD", "Guardrails", "Política de autonomia e aprovação"],
+      "aiFlowImpact": "Alto risco de uso ampliado sem controle.",
+      "decision": "Prioridade de fundação"
+    },
+    {
+      "key": "roiReadiness",
+      "label": "ROI Readiness",
+      "score": 2.2,
+      "target": 3.4,
+      "reading": "Métricas e baseline incompletos.",
+      "gaps": ["Pouca clareza de custo atual", "SLA", "Volume", "Retrabalho e sponsor"],
+      "aiFlowImpact": "ROI difícil de validar sem baseline por AI Flow.",
+      "decision": "Criar baseline por AI Flow"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "disclaimer": "Valores e prazos são demonstrativos, com premissas simuladas para exercício executivo.",
+
+  "snapshotEyebrow": "EXECUTIVE SNAPSHOT · VISÃO CONSOLIDADA DA INCEPTION",
+  "snapshotHeadline": "Da ambição em IA ao plano executivo de valor, arquitetura e métricas",
+  "snapshotLead": "A AI Strategic Inception transforma oportunidades dispersas em AI Flows priorizados, conectando maturidade, arquitetura AI-Ready, backlog, roadmap, value case e indicadores para orientar decisões de avanço, fundação ou ajuste.",
+
+  "journeyTitle": "Do diagnóstico à decisão executiva",
+  "journeyLead": "A AI Strategic Inception conecta contexto, maturidade, arquitetura, AI Flows, roadmap, value case e métricas em uma sequência executiva de decisão.",
+
+  "journeyCards": [
+    { "icon": "compass", "label": "Pré-Inception", "output": "Contexto, ambição, dores, stacks e restrições.", "decision": "Onde focar a Inception.", "link": "#pre-inception" },
+    { "icon": "radar", "label": "Diagnóstico de Maturidade", "output": "AI, cultura, dados, APIs, arquitetura, governança e ROI.", "decision": "Onde avançar e onde preparar fundação.", "link": "#maturity-diagnosis" },
+    { "icon": "layers", "label": "Arquitetura Alvo", "output": "Evolução da Arquitetura AS IS para Arquitetura AI-Ready.", "decision": "Quais capacidades consumir, ajustar ou habilitar.", "link": "#target-architecture" },
+    { "icon": "waves", "label": "AI Flow Backlog", "output": "AI Flows priorizados por valor, prontidão, risco e dependências.", "decision": "Quais ondas avançam primeiro.", "link": "#ai-flow-backlog" },
+    { "icon": "detail", "label": "Detalhe do AI Flow", "output": "Anatomia da onda com agentes, fluxos, dados, APIs, guardrails e métricas.", "decision": "Como preparar a AI Sprint.", "link": "#ai-flow-detail" },
+    { "icon": "timeline", "label": "Roadmap & Value Case", "output": "Sequência, premissas, valor esperado e métricas demonstrativas.", "decision": "Qual plano executivo seguir.", "link": "#roadmap-value-case" },
+    { "icon": "chart", "label": "Dashboard de Métricas", "output": "Acompanhamento de valor, adoção, governança, risco e decisões.", "decision": "Como monitorar evolução e próximos ciclos.", "link": "#metrics-dashboard" }
+  ],
+
+  "kpis": [
+    { "label": "Oportunidades identificadas", "value": "18", "note": "Hipóteses levantadas na Inception." },
+    { "label": "AI Flows candidatos", "value": "8", "note": "Frentes agrupadas por valor e viabilidade." },
+    { "label": "AI Flows priorizados", "value": "5", "note": "Ondas avaliadas por valor, prontidão, risco e dependências." },
+    { "label": "Recomendados para avanço imediato", "value": "2", "note": "AI Flows com melhor combinação entre valor e prontidão." },
+    { "label": "ROI potencial priorizado", "value": "R$ 1,2M", "note": "Estimativa demonstrativa do subconjunto priorizado." },
+    { "label": "Payback estimado", "value": "3 a 5 meses", "note": "Cenário ilustrativo sob premissas de adoção e escopo." },
+    { "label": "Redução de esforço estimada", "value": "20% a 35%", "note": "Faixa combinada para processos alvo." },
+    { "label": "Condições críticas mapeadas", "value": "3", "note": "Pontos de dados, integração e governança identificados para orientar preparação e mitigação." }
+  ],
+
+  "recommendedDecision": {
+    "title": "Plano recomendado de avanço",
+    "lead": "A Inception consolida as evidências e recomenda uma sequência prática para transformar AI Flows em valor, tratando em paralelo avanço imediato, fundações corporativas e ajustes de escopo.",
+    "tracks": [
+      {
+        "icon": "advance",
+        "title": "Avançar agora",
+        "badge": "Prioridade executiva",
+        "flows": ["Atendimento Inteligente", "Modernização Assistida"],
+        "text": "Ondas com melhor combinação entre valor, prontidão e capacidade de validação em AI Sprint.",
+        "next": "Entrar em AI Sprint com métricas, sponsor, escopo controlado e critérios de sucesso."
+      },
+      {
+        "icon": "foundation",
+        "title": "Preparar fundação",
+        "badge": "Fundação para escala",
+        "flows": ["Conhecimento Corporativo Governado", "Operação Assistida por Agentes"],
+        "text": "Ondas de alto potencial que dependem de dados, governança, APIs, owners, observabilidade e limites de autonomia.",
+        "next": "Organizar fundações corporativas antes de ampliar escala e autonomia dos agentes."
+      },
+      {
+        "icon": "refine",
+        "title": "Ajustar escopo",
+        "badge": "Refino necessário",
+        "flows": ["Triagem Inteligente de Documentos"],
+        "text": "Hipótese com valor potencial, mas que exige refinamento de layouts, regras de negócio, classificação LGPD e revisão humana.",
+        "next": "Refinar premissas, reduzir incertezas e preparar nova avaliação de priorização."
+      }
+    ],
+    "insight": "A recomendação combina valor, prontidão, risco e dependências para evitar que iniciativas de IA avancem sem fundação mínima ou sem métricas de valor."
+  },
+
+  "attentionCards": [
+    { "label": "Governança segura desde o início", "text": "Estrutura políticas, auditoria, limites de ação e fallback humano para acelerar adoção com segurança." },
+    { "label": "Dados e conhecimento confiáveis", "text": "Organiza fontes, owners, curadoria e classificação para aumentar precisão, confiança e reutilização." },
+    { "label": "APIs e integração prontas para IA", "text": "Conecta sistemas, gateways e dados para que agentes consumam capacidades corporativas com rastreabilidade." },
+    { "label": "Métricas e baseline de valor", "text": "Define indicadores, baseline e acompanhamento para medir impacto, adoção, produtividade e evolução do ROI." }
+  ],
+
+  "closingTitle": "O que o Snapshot Executivo ajuda a decidir",
+  "closingLead": "O Snapshot Executivo consolida os principais resultados da Inception para orientar decisões sobre sequência, investimento, dependências, valor esperado e próximos ciclos de AI Sprints.",
+  "closingBullets": [
+    "Quais AI Flows devem avançar primeiro.",
+    "Quais fundações precisam ser preparadas.",
+    "Quais dependências podem bloquear valor.",
+    "Quais métricas devem orientar a evolução.",
+    "Quais condições críticas exigem decisão executiva.",
+    "Como conectar Inception, AI Sprints, roadmap e governança."
+  ],
+  "closingMicrocopy": "AI Flow é uma onda de desenvolvimento e adoção de IA, não um componente técnico."
+}
